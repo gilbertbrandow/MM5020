@@ -6,5 +6,42 @@
 
 \begin{document}
 \maketitle
+\section{Group Action on the Projective Line}
+
+Let \( k = \mathbb{F}_7 = \mathbb{Z}/7\mathbb{Z} \). We define \( \mathrm{GL}_2(k) \) as the group of all invertible \( 2 \times 2 \) matrices with entries in the field \( k \). In other words,
+\[
+\mathrm{GL}_2(k) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in M_2(k) \ \middle| \ ad - bc \neq 0 \right\}.
+\]
+
+\subsection*{\(\mathrm{GL}_2(k)\) Forms a Group}
+
+Let \( A, B \in \mathrm{GL}_2(k) \). Then the product \( AB \) is defined as:
+\[
+AB = \begin{pmatrix}
+ae + bg & af + bh \\
+ce + dg & cf + dh
+\end{pmatrix},
+\]
+where all entries involve only addition and multiplication of elements in \( k \). Since \( k \) is a field, it is closed under addition and multiplication, so all entries of \( AB \) lie in \( k \). Furthermore, \( \det(AB) = \det(A)\det(B) \neq 0 \), so \( AB \in \mathrm{GL}_2(k) \). Thus, \( \mathrm{GL}_2(k) \) is closed under matrix multiplication.
+
+Since matrix multiplication is associative, the operation on \( \mathrm{GL}_2(k) \) is associative.
+
+The identity element in \( \mathrm{GL}_2(k) \) is the identity matrix
+\[
+I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
+\]
+For any \( A \in \mathrm{GL}_2(k) \), we have \( AI = IA = A \), and since the entries \( 1 \) and \( 0 \) are in \( k \), we conclude \( I \in \mathrm{GL}_2(k) \).
+
+Since every element of \( \mathrm{GL}_2(k) \) is invertible by definition, the inverse of
+\[
+A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k)
+\]
+is given by:
+\[
+A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.
+\]
+Since \( a, b, c, d \in k \), and \( \det(A) = ad - bc \neq 0 \), we have \( \frac{1}{\det(A)} \in k \), because \( k \) is a field. As \( k \) is closed under addition, subtraction, and multiplication, all entries of \( A^{-1} \) lie in \( k \). Hence, \( A^{-1} \in \mathrm{GL}_2(k) \).
+
+Therefore, \( \mathrm{GL}_2(k) \) satisfies the group axioms under matrix multiplication and is a group.
 
 \end{document}
