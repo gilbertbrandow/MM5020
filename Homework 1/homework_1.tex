@@ -44,4 +44,37 @@ Since \( a, b, c, d \in k \), and \( \det(A) = ad - bc \neq 0 \), we have \( \fr
 
 Therefore, \( \mathrm{GL}_2(k) \) satisfies the group axioms under matrix multiplication and is a group.
 
+\subsection*{The Center of \(\mathrm{GL}_2(k)\)}
+
+Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \). Suppose \( A \in Z(\mathrm{GL}_2(k)) \). Then for all \( B = \begin{pmatrix} e & f \\ g & h \end{pmatrix} \in \mathrm{GL}_2(k) \), we must have
+\[
+AB = BA.
+\]
+
+Compute both sides:
+\[
+AB = \begin{pmatrix} ae + bg & af + bh \\ ce + dg & cf + dh \end{pmatrix}, \quad
+BA = \begin{pmatrix} ea + fc & eb + fd \\ ga + hc & gb + hd \end{pmatrix}.
+\]
+
+For these to be equal for all \( e, f, g, h \in k \), compare the corresponding entries:
+
+\begin{align*}
+ae + bg &= ea + fc &\Rightarrow& \quad b = c = 0 \\
+af + bh &= eb + fd &\Rightarrow& \quad a = d, \text{ using } b = 0 \\
+ce + dg &= ga + hc &\Rightarrow& \quad c = b = 0 \\
+cf + dh &= gb + hd &\Rightarrow& \quad d = a
+\end{align*}
+
+Hence, \( A \) must be of the form:
+\[
+A = \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \lambda I,
+\]
+where \( \lambda \in k^\times = k \setminus \{0\} \) (since \( A \) must be invertible). Thus,
+\[
+Z(\mathrm{GL}_2(\mathbb{F}_7)) = \left\{ \lambda I \mid \lambda \in k^\times \right\}.
+\]
+
+This center consists of 6 elements and forms an abelian subgroup of \( \mathrm{GL}_2(\mathbb{F}_7) \).
+
 \end{document}
