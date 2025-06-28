@@ -77,4 +77,46 @@ Z(\mathrm{GL}_2(\mathbb{F}_7)) = \left\{ \lambda I \mid \lambda \in k^\times \ri
 
 This center consists of 6 elements and forms an abelian subgroup of \( \mathrm{GL}_2(\mathbb{F}_7) \).
 
+\subsection*{Group Action on \(\mathbb{P}^1(k)\)}
+
+We define the projective line over \( k \) as \( \mathbb{P}^1(k) = k \cup \{\infty\} \). Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \). Then the action of \( \mathrm{GL}_2(k) \) on \( \mathbb{P}^1(k) \) is given by the formula:
+\[
+A \cdot z =
+\begin{cases}
+\displaystyle \frac{az + b}{cz + d}, & \text{if } z \in k \text{ and } cz + d \neq 0, \\
+\infty, & \text{if } z \in k \text{ and } cz + d = 0, \\
+\displaystyle \frac{a}{c}, & \text{if } z = \infty \text{ and } c \neq 0, \\
+\infty, & \text{if } z = \infty \text{ and } c = 0.
+\end{cases}
+\]
+
+We verify that this defines a group action.
+
+\paragraph{Identity:}
+Let \( I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \). Then for all \( z \in \mathbb{P}^1(k) \),
+\[
+I \cdot z = \frac{1 \cdot z + 0}{0 \cdot z + 1} = \frac{z}{1} = z, \quad \text{and} \quad I \cdot \infty = \frac{1}{0} := \infty.
+\]
+So the identity acts as the identity function.
+
+\paragraph{Compatibility:}
+Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \) and \( B = \begin{pmatrix} e & f \\ g & h \end{pmatrix} \) be in \( \mathrm{GL}_2(k) \), and let \( z \in \mathbb{P}^1(k) \). Then:
+\[
+B \cdot z = \frac{ez + f}{gz + h}, \quad \text{and} \quad A \cdot (B \cdot z) = \frac{a \cdot \left( \frac{ez + f}{gz + h} \right) + b}{c \cdot \left( \frac{ez + f}{gz + h} \right) + d}.
+\]
+Simplifying this gives:
+\[
+A \cdot (B \cdot z) = \frac{(aez + af + bgz + bh)}{(cez + cf + dgz + dh)} = \frac{(ae + bg)z + (af + bh)}{(ce + dg)z + (cf + dh)},
+\]
+which is the action of the product matrix \( AB \) on \( z \):
+\[
+(AB) \cdot z.
+\]
+Thus, the compatibility condition holds.
+
+\medskip
+
+Therefore, the formula defines a group action of \( \mathrm{GL}_2(k) \) on \( \mathbb{P}^1(k) \).
+
+
 \end{document}
