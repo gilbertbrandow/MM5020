@@ -161,4 +161,27 @@ Therefore,
 A = \begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} = aI, \quad \text{with } a \in k^\times.
 \]
 These are exactly the scalar matrices which form the center. Hence, the kernel of the action is the center of \( \mathrm{GL}_2(k) \).
+
+\subsection*{Intersection of Conjugates of the Stabilizer}
+
+Let \( B \subseteq \mathrm{GL}_2(k) \) be the stabilizer of \( 0 \in \mathbb{P}^1(k) \). We claim that
+\[
+\bigcap_{g \in \mathrm{GL}_2(k)} gBg^{-1} = Z(\mathrm{GL}_2(k)).
+\]
+
+This follows from the general fact that, if a group \( G \) acts transitively on a set \( X \), then the intersection of all conjugates of the stabilizer \( G_x \) is equal to the kernel of the associated homomorphism:
+\[
+\bigcap_{g \in G} gG_xg^{-1} = \ker(G \to \mathrm{Sym}(X)).
+\]
+
+In our case, \( G = \mathrm{GL}_2(k) \), \( X = \mathbb{P}^1(k) \). We have already shown that the action is transitive, and that the kernel of the action is the center:
+\[
+\ker = Z(\mathrm{GL}_2(k)).
+\]
+
+Therefore,
+\[
+\bigcap_{g \in \mathrm{GL}_2(k)} gBg^{-1} = Z(\mathrm{GL}_2(k)).
+\]
+
 \end{document}
