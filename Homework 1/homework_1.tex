@@ -149,17 +149,13 @@ The kernel of the action can be defined as follows,
 \]
 
 Then, for all \( z \in k \),
+\begin{align*}
+A \cdot z &= \frac{az + b}{cz + d} = z \\
+&\implies az + b = z(cz + d) = cz^2 + dz \\
+&\implies cz^2 + (d - a)z - b = 0 \\
+&\implies \quad c = 0, \quad d = a, \quad b = 0.
+\end{align*}
 
-\[
-A \cdot z = \frac{az + b}{cz + d} = z
-\implies az + b = z(cz + d) = cz^2 + dz
-\implies cz^2 + (d - a)z - b = 0
-\]
-
-This equation must hold for all \( z \in k \), so the polynomial must be identically zero:
-\[
-\Rightarrow \quad c = 0, \quad d = a, \quad b = 0.
-\]
 Therefore,
 \[
 A = \begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} = aI, \quad \text{with } a \in k^\times.
