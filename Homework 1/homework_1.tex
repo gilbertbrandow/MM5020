@@ -116,5 +116,29 @@ Thus, the compatibility condition holds.
 
 Therefore, the formula defines a group action of \( \mathrm{GL}_2(k) \) on \( \mathbb{P}^1(k) \).
 
+\subsection*{Transitivity and the Stabilizer of 0}
+
+Let \( z \in \mathbb{P}^1(k) \) be arbitrary. We want to find a matrix \( A \in \mathrm{GL}_2(k) \) such that \( A \cdot 0 = z \). Let
+\[
+A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k).
+\]
+Then the action on \( 0 \) is given by
+\[
+A \cdot 0 = \frac{b}{d},
+\]
+provided \( d \neq 0 \). For any \( z \in k \), we can take \( b = z \) and \( d = 1 \), with \( a \in k^\times \), \( c \in k \) arbitrary, such that \( \det(A) = ad - bc \neq 0 \).
+
+To obtain \( \infty \), we require \( d = 0 \), in which case the formula becomes
+\[
+A \cdot 0 = \frac{b}{d} = \infty,
+\]
+provided \( b \neq 0 \). We can choose \( a, c \in k \) arbitrarily so that \( \det(A) = -bc \neq 0 \), ensuring \( A \in \mathrm{GL}_2(k) \).
+
+Hence, for any \( z \in \mathbb{P}^1(k) \), there exists a matrix \( A \in \mathrm{GL}_2(k) \) such that \( A \cdot 0 = z \). Therefore, the action is transitive.
+
+We require \( A \cdot 0 = 0 \), so \( \frac{b}{d} = 0 \Rightarrow b = 0 \). Therefore, the stabilizer of 0 is the set of all invertible lower triangular matrices:
+\[
+B = \left\{ \begin{pmatrix} a & 0 \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \ \middle| \ a, d \in k^\times, \ c \in k \right\}.
+\]
 
 \end{document}
