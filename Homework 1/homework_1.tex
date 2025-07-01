@@ -141,4 +141,28 @@ We require \( A \cdot 0 = 0 \), so \( \frac{b}{d} = 0 \Rightarrow b = 0 \). Ther
 B = \left\{ \begin{pmatrix} a & 0 \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \ \middle| \ a, d \in k^\times, \ c \in k \right\}.
 \]
 
+\subsection*{Kernel of the Action}
+
+The kernel of the action can be defined as follows,
+\[
+\ker = \left\{ A \in \mathrm{GL}_2(k) \mid A \cdot z = z \text{ for all } z \in \mathbb{P}^1(k) \right\}.
+\]
+
+Then, for all \( z \in k \),
+
+\[
+A \cdot z = \frac{az + b}{cz + d} = z
+\implies az + b = z(cz + d) = cz^2 + dz
+\implies cz^2 + (d - a)z - b = 0
+\]
+
+This equation must hold for all \( z \in k \), so the polynomial must be identically zero:
+\[
+\Rightarrow \quad c = 0, \quad d = a, \quad b = 0.
+\]
+Therefore,
+\[
+A = \begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} = aI, \quad \text{with } a \in k^\times.
+\]
+These are exactly the scalar matrices which form the center. Hence, the kernel of the action is the center of \( \mathrm{GL}_2(k) \).
 \end{document}
