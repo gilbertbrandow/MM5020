@@ -6,7 +6,7 @@
 
 \begin{document}
 \maketitle
-\section{Group Action on the Projective Line}
+\section*{Problem 1}
 
 Let \( k = \mathbb{F}_7 = \mathbb{Z}/7\mathbb{Z} \). We define \( \mathrm{GL}_2(k) \) as the group of all invertible \( 2 \times 2 \) matrices with entries in the field \( k \). In other words,
 \[
@@ -182,6 +182,22 @@ In our case, \( G = \mathrm{GL}_2(k) \), \( X = \mathbb{P}^1(k) \). We have alre
 Therefore,
 \[
 \bigcap_{g \in \mathrm{GL}_2(k)} gBg^{-1} = Z(\mathrm{GL}_2(k)).
+\]
+
+\section*{Problem 2}
+Let \( X \) be the set of all \( k \)-element subsets of \( \{1, \dots, n\} \), and let \( S_n \) act on \( X \) by
+\[
+\sigma \cdot E := \{ \sigma(e) \mid e \in E \}.
+\]
+
+Fix the subset \( A = \{1, \dots, k\} \in X \). The stabilizer of \( A \) consists of all permutations in \( S_n \) that fix \( A \) setwise. These are exactly the permutations that act as an element of \( S_k \) on the set \( \{1, \dots, k\} \), and as an element of \( S_{n-k} \) on its complement \( \{k+1, \dots, n\} \), independently. Thus,
+\[
+\mathrm{Stab}_{S_n}(A) \cong S_k \times S_{n-k}.
+\]
+
+By the Orbit-Stabilizer Theorem, the number of \( k \)-element subsets is
+\[
+|X| = [S_n : \mathrm{Stab}_{S_n}(A)] = \frac{n!}{k!(n - k)!} = \binom{n}{k}.
 \]
 
 \end{document}
