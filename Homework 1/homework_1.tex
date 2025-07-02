@@ -200,4 +200,18 @@ By the Orbit-Stabilizer Theorem, the number of \( k \)-element subsets is
 |X| = [S_n : \mathrm{Stab}_{S_n}(A)] = \frac{n!}{k!(n - k)!} = \binom{n}{k}.
 \]
 
+\section*{Problem 3}
+\subsection*{Group action}
+
+Let \( G \) be a finite group and \( H \subset G \) a subgroup. Define a map
+\[
+\phi  : H \times (G/H) \to G/H, \quad (h, gH) \mapsto (hg)H.
+\]
+
+To verify that \( \phi \) defines a group action, we check the two axioms. For all \( gH \in G/H \), 
+\[e \cdot gH = (eg)H = gH.\]
+For all \( h_1, h_2 \in H \) and \( gH \in G/H \), 
+\[h_1 \cdot (h_2 \cdot gH) = h_1 \cdot (h_2 g H) = (h_1 h_2 g)H = ((h_1 h_2) \cdot gH).\]
+
+Hence, the identity and compatibility axioms are satisfied. Since we are viewing \( G/H \) purely as a set of left cosets (not as a quotient group), this confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
 \end{document}
