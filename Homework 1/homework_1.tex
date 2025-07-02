@@ -214,4 +214,35 @@ For all \( h_1, h_2 \in H \) and \( gH \in G/H \),
 \[h_1 \cdot (h_2 \cdot gH) = h_1 \cdot (h_2 g H) = (h_1 h_2 g)H = ((h_1 h_2) \cdot gH).\]
 
 Hence, the identity and compatibility axioms are satisfied. Since we are viewing \( G/H \) purely as a set of left cosets (not as a quotient group), this confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
+
+\subsection*{Trivial action implies normality}
+
+Suppose the action defined by
+\[
+\phi : H \times (G/H) \to G/H, \quad (h, gH) \mapsto (hg)H
+\]
+is trivial. That means for all \( h \in H \) and \( gH \in G/H \), we have:
+\[
+\phi(h, gH) = gH \quad \Rightarrow \quad (hg)H = gH.
+\]
+
+This implies:
+\[
+hg \in gH \quad \Rightarrow \quad g^{-1} h g \in H \quad \text{for all } h \in H, g \in G.
+\]
+
+Therefore, \( H \) is closed under conjugation by elements of \( G \), i.e., \( gHg^{-1} \subseteq H \). Since \( g \in G \) was arbitrary, it follows that \(H\) is a normal subgroup of \(G\).
+
+\subsection*{The action is not transitive}
+
+Assume \( [G : H] = p \), where \( p \) is the smallest prime dividing \( |G| \).
+
+Suppose, for contradiction, that the action is transitive. Then the orbit of any element \( gH \in G/H \) under the action of \( H \) is the entire set \( G/H \), which has \( p \) elements.
+
+But the size of any orbit under a group action divides the order of the acting group and in this case, \( |H| = |G|/p \).
+
+Therefore, the size of the orbit must divide \( |H| = |G|/p \), but it is equal to \( p \). Since \( p \) is the smallest prime dividing \( |G| \), it does not divide \( |G|/p \), and thus does not divide \( |H| \).
+
+This is a contradiction. Hence, the action cannot be transitive.
+
 \end{document}
