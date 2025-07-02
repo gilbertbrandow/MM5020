@@ -295,7 +295,7 @@ Hence, the normal subgroups of \( S_4 \) containing \( V_4 \) are \(V_4, A_4, S_
 
 \section*{Problem 5}
 \subsection*{Group homomorphisms}
-Since \(5<7\) and \(5\nmid(7-1)=6\), the well-known $pq$-order theorem implies that every group of order \(pq\) with those divisibility conditions is cyclic.  Hence
+Since \(5<7\) and \(5\nmid(7-1)=6\), the $pq$-order theorem implies that every group of order \(pq\) with those divisibility conditions is cyclic.  Hence
 \[
 G \cong \mathbb Z_{35}.
 \]
@@ -306,5 +306,15 @@ For a cyclic domain, a homomorphism is completely determined by the image of a g
 Then \(\mathrm{ord}(x)\) must divide \(\mathrm{ord}(g)=35\).
 
 The possible element orders in \(S_{3}\) are \(1,2,3\), and among these only \(1\) divides \(35\).  Therefore \(x\) must be the identity permutation; consequently \(\varphi\) sends every element of \(G\) to the identity in \(S_{3}\).  This is the trivial homomorphism, and no other homomorphism can exist.
+
+\subsection*{Group actions}
+
+An action of \(G\) on the set \(E=\{1,2,3\}\) is equivalent to a group homomorphism
+\[
+\rho : G \longrightarrow \operatorname{Sym}(E)=S_{3}.
+\]
+In the previous section we proved that, for a group \(G\) of order \(35\), the only homomorphism \(G\to S_{3}\) is the trivial one.  
+
+Hence there is exactly 1 action of \(G\) on \(E\), namely the trivial action \(g\cdot x = x\) for all \(g\in G\) and \(x\in E\).
 
 \end{document}
