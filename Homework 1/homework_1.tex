@@ -208,21 +208,17 @@ Fix the subset \( A = \{1, \dots, k\} \in X \). The stabilizer of \( A \) consis
 \end{enumerate}
 
 \section*{Problem 3}
-\subsection*{Group action}
 
-Let \( G \) be a finite group and \( H \subset G \) a subgroup. Define a map
-\[
-\phi  : H \times (G/H) \to G/H, \quad (h, gH) \mapsto (hg)H.
-\]
+\begin{enumerate}[label=(\arabic*)] 
 
-To verify that \( \phi \) defines a group action, we check the two axioms. For all \( gH \in G/H \), 
+\item To verify that \( \phi \) defines a group action, we check the two axioms. For all \( gH \in G/H \), 
 \[e \cdot gH = (eg)H = gH.\]
 For all \( h_1, h_2 \in H \) and \( gH \in G/H \), 
 \[h_1 \cdot (h_2 \cdot gH) = h_1 \cdot (h_2 g H) = (h_1 h_2 g)H = ((h_1 h_2) \cdot gH).\]
 
-Hence, the identity and compatibility axioms are satisfied. Since we are viewing \( G/H \) purely as a set of left cosets (not as a quotient group), this confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
+Hence, the identity and compatibility axioms are satisfied. Since we are viewing \( G/H \) purely as a set of left cosets, this confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
 
-\subsection*{Trivial action implies normality}
+\item
 
 Suppose $\phi$ is trivial. That means for all \( h \in H \) and \( gH \in G/H \), we have:
 \[
@@ -234,9 +230,10 @@ This implies:
 hg \in gH \quad \Rightarrow \quad g^{-1} h g \in H \quad \text{for all } h \in H, g \in G.
 \]
 
-Therefore, \( H \) is closed under conjugation by elements of \( G \), i.e., \( gHg^{-1} \subseteq H \). Since \( g \in G \) was arbitrary, it follows that \(H\) is a normal subgroup of \(G\).
+Therefore, \( H \) is closed under conjugation by elements of \( G \), i.e., \( gHg^{-1} \subseteq H \). 
+Since \( g \in G \) was arbitrary, it follows that \(H\) is a normal subgroup of \(G\).
 
-\subsection*{The action is not transitive}
+\item
 
 Assume \( [G : H] = p \), where \( p \) is the smallest prime dividing \( |G| \).
 
@@ -248,7 +245,7 @@ Therefore, the size of the orbit must divide \( |H| = |G|/p \), but it is equal 
 
 This is a contradiction. Hence, the action cannot be transitive.
 
-\subsection*{Class equation and normality}
+\item
 
 From the theory of group actions, we have the orbit decomposition:
 \[
@@ -263,19 +260,21 @@ The only remaining possibility is that all orbits have size 1. That means:
 (hg)H = gH \quad \forall h \in H,\, gH \in G/H,
 \]
 which implies \( hg \in gH \Rightarrow g^{-1}hg \in H \), i.e., \( H \) is invariant under conjugation by all \( g \in G \). Therefore, \( H \trianglelefteq G \).
+\end{enumerate}
 
 \section*{Problem 4}
-\subsection*{Normal subgroup}
 
-Let \( V_4 = \{ \text{Id}, (12)(34), (13)(24), (14)(23) \} \subset S_4 \). By definition, \( V_4 \) contains the identity element. 
+\begin{enumerate}[label=(\arabic*)] 
 
-To show that \( V_4 \) is normal in \( S_4 \), we verify that it is invariant under conjugation. 
+\item
+
+By definition, \( V_4 \) contains the identity element. To show that \( V_4 \) is normal in \( S_4 \), we verify that it is invariant under conjugation. 
 For any \( \sigma \in S_4 \) and \( v \in V_4 \), we have \( \sigma v \sigma^{-1} \) is again a product of two disjoint transpositions. 
 Since there are exactly three such elements in \( S_4 \), and they form a conjugacy class, it follows that conjugation by any \( \sigma \in S_4 \) sends elements of \( V_4 \) to other elements in \( V_4 \).
 
 Hence, \( V_4 \) is closed under conjugation, and we conclude that \( V_4 \trianglelefteq S_4 \).
 
-\subsection*{An Isomorphism}
+\item 
 Consider the subgroup \( H = \langle (12), (123) \rangle \subset S_4 \). This subgroup permutes the elements \( \{1, 2, 3\} \) and fixes 4, so it is isomorphic to \( S_3 \). We identify \( S_3 \) with this subgroup \( H \).
 
 \medskip
@@ -291,15 +290,14 @@ f(\sigma_1 \sigma_2) = \sigma_1 \sigma_2 V_4 = \sigma_1 V_4 \cdot \sigma_2 V_4 =
 \]
 Thus, \( f \) is a bijective homomorphism and therefore an isomorphism.
 
-\subsection*{Find normal subgroups}
-We are asked to find the normal subgroups of \( S_4 \) that contain \( V_4 \). From group theory, the normal subgroups of \( S_4 \) are:
+\item From group theory, the normal subgroups of \( S_4 \) are:
 \[
 \{ \text{Id} \}, \quad V_4, \quad A_4, \quad S_4.
 \]
 Here \(A_4\) denotes the alternating group on four letters, the set of all even permutations, so it is normal in \(S_4\). Moreover, because each element of \(V_4\) is a product of two transpositions (an even permutation), we have \(V_4 \subset A_4\).
 The subgroups that contain \( V_4 \) are \(V_4, A_4, S_4.\) These are all normal in \( S_4 \), and there are no other normal subgroups strictly between \( V_4 \) and \( S_4 \). 
 Hence, the normal subgroups of \( S_4 \) containing \( V_4 \) are \(V_4, A_4, S_4.\) 
-
+\end{enumerate}
 \section*{Problem 5}
 \subsection*{Group homomorphisms}
 Since \(5<7\) and \(5\nmid(7-1)=6\), the $pq$-order theorem implies that every group of order \(pq\) with those divisibility conditions is cyclic.  Hence
