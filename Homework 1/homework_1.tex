@@ -257,4 +257,31 @@ The only remaining possibility is that all orbits have size 1. That means:
 \]
 which implies \( hg \in gH \Rightarrow g^{-1}hg \in H \), i.e., \( H \) is invariant under conjugation by all \( g \in G \). Therefore, \( H \trianglelefteq G \).
 
+\section*{Problem 4}
+\subsection*{Normal subgroup}
+
+Let \( V_4 = \{ \text{Id}, (12)(34), (13)(24), (14)(23) \} \subset S_4 \). By definition, \( V_4 \) contains the identity element. 
+
+To show that \( V_4 \) is normal in \( S_4 \), we verify that it is invariant under conjugation. 
+For any \( \sigma \in S_4 \) and \( v \in V_4 \), we have \( \sigma v \sigma^{-1} \) is again a product of two disjoint transpositions. 
+Since there are exactly three such elements in \( S_4 \), and they form a conjugacy class, it follows that conjugation by any \( \sigma \in S_4 \) sends elements of \( V_4 \) to other elements in \( V_4 \).
+
+Hence, \( V_4 \) is closed under conjugation, and we conclude that \( V_4 \trianglelefteq S_4 \).
+
+\subsection*{An Isomorphism}
+Consider the subgroup \( H = \langle (12), (123) \rangle \subset S_4 \). This subgroup permutes the elements \( \{1, 2, 3\} \) and fixes 4, so it is isomorphic to \( S_3 \). We identify \( S_3 \) with this subgroup \( H \).
+
+\medskip
+
+We define the map
+\[
+f : S_3 \to S_4 / V_4, \quad f(\sigma) = \sigma V_4.
+\]
+
+First, it is well-defined: each \( \sigma \in S_3 \) is interpreted as an element of \( H \subset S_4 \), and the left coset \( \sigma V_4 \) is a valid element of the quotient \( S_4 / V_4 \). The map is injective because \( H \cap V_4 = \{ \text{Id} \} \), so no two distinct elements of \( H \) lie in the same coset. It is surjective since \( H \) has 6 elements and \( |S_4 / V_4| = 6 \), meaning the image of \( f \) exhausts all cosets. Finally, \( f \) is a homomorphism: for all \( \sigma_1, \sigma_2 \in S_3 \), we have
+\[
+f(\sigma_1 \sigma_2) = \sigma_1 \sigma_2 V_4 = \sigma_1 V_4 \cdot \sigma_2 V_4 = f(\sigma_1) f(\sigma_2).
+\]
+Thus, \( f \) is a bijective homomorphism and therefore an isomorphism.
+
 \end{document}
