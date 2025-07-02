@@ -217,11 +217,7 @@ Hence, the identity and compatibility axioms are satisfied. Since we are viewing
 
 \subsection*{Trivial action implies normality}
 
-Suppose the action defined by
-\[
-\phi : H \times (G/H) \to G/H, \quad (h, gH) \mapsto (hg)H
-\]
-is trivial. That means for all \( h \in H \) and \( gH \in G/H \), we have:
+Suppose $\phi$ is trivial. That means for all \( h \in H \) and \( gH \in G/H \), we have:
 \[
 \phi(h, gH) = gH \quad \Rightarrow \quad (hg)H = gH.
 \]
@@ -237,12 +233,28 @@ Therefore, \( H \) is closed under conjugation by elements of \( G \), i.e., \( 
 
 Assume \( [G : H] = p \), where \( p \) is the smallest prime dividing \( |G| \).
 
-Suppose, for contradiction, that the action is transitive. Then the orbit of any element \( gH \in G/H \) under the action of \( H \) is the entire set \( G/H \), which has \( p \) elements.
+Suppose that the action is transitive. Then the orbit of any element \( gH \in G/H \) under the action of \( H \) is the entire set \( G/H \), which has \( p \) elements.
 
 But the size of any orbit under a group action divides the order of the acting group and in this case, \( |H| = |G|/p \).
 
 Therefore, the size of the orbit must divide \( |H| = |G|/p \), but it is equal to \( p \). Since \( p \) is the smallest prime dividing \( |G| \), it does not divide \( |G|/p \), and thus does not divide \( |H| \).
 
 This is a contradiction. Hence, the action cannot be transitive.
+
+\subsection*{Class equation and normality}
+
+From the theory of group actions, we have the orbit decomposition:
+\[
+|G/H| = \sum_{i=1}^r |\mathcal{O}_i|,
+\]
+where \( \mathcal{O}_i \) are the distinct orbits of the action of \( H \) on the set \( G/H \).
+
+Since \( |G/H| = p \), a prime number, the possible orbit decompositions are very limited. One possibility is that there is a single orbit of size \( p \), but this would imply that the action is transitive, which we ruled out in the previous section. Another possibility is that there is one orbit of size 1 and one of size \( p - 1 \), but the size of each orbit must divide \( |H| = |G|/p \). Since \( p \) is the smallest prime dividing \( |G| \), it does not divide \( |G|/p \), and therefore cannot divide any orbit size greater than 1.
+
+The only remaining possibility is that all orbits have size 1. That means:
+\[
+(hg)H = gH \quad \forall h \in H,\, gH \in G/H,
+\]
+which implies \( hg \in gH \Rightarrow g^{-1}hg \in H \), i.e., \( H \) is invariant under conjugation by all \( g \in G \). Therefore, \( H \trianglelefteq G \).
 
 \end{document}
