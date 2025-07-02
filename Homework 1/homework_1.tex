@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
 \title{Abstract Algebra - Homework 1}
 \author{Simon Gustafsson}
 \date{}
@@ -13,8 +14,11 @@ Let \( k = \mathbb{F}_7 = \mathbb{Z}/7\mathbb{Z} \). We define \( \mathrm{GL}_2(
 \mathrm{GL}_2(k) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in M_2(k) \ \middle| \ ad - bc \neq 0 \right\}.
 \]
 
-\subsection*{\(\mathrm{GL}_2(k)\) Forms a Group}
+\begin{enumerate}[label=(\arabic*)] 
 
+% \subsection*{\(\mathrm{GL}_2(k)\) Forms a Group}
+
+\item 
 Let \( A, B \in \mathrm{GL}_2(k) \). Then the product \( AB \) is defined as:
 \[
 AB = \begin{pmatrix}
@@ -43,8 +47,6 @@ A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.
 Since \( a, b, c, d \in k \), and \( \det(A) = ad - bc \neq 0 \), we have \( \frac{1}{\det(A)} \in k \), because \( k \) is a field. As \( k \) is closed under addition, subtraction, and multiplication, all entries of \( A^{-1} \) lie in \( k \). Hence, \( A^{-1} \in \mathrm{GL}_2(k) \).
 
 Therefore, \( \mathrm{GL}_2(k) \) satisfies the group axioms under matrix multiplication and is a group.
-
-\subsection*{The Center of \(\mathrm{GL}_2(k)\)}
 
 Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \). Suppose \( A \in Z(\mathrm{GL}_2(k)) \). Then for all \( B = \begin{pmatrix} e & f \\ g & h \end{pmatrix} \in \mathrm{GL}_2(k) \), we must have
 \[
@@ -77,7 +79,7 @@ Z(\mathrm{GL}_2(\mathbb{F}_7)) = \left\{ \lambda I \mid \lambda \in k^\times \ri
 
 This center consists of 6 elements and forms an abelian subgroup of \( \mathrm{GL}_2(\mathbb{F}_7) \).
 
-\subsection*{Group Action on \(\mathbb{P}^1(k)\)}
+\item %\subsection*{Group Action on \(\mathbb{P}^1(k)\)}
 
 We define the projective line over \( k \) as \( \mathbb{P}^1(k) = k \cup \{\infty\} \). Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \). Then the action of \( \mathrm{GL}_2(k) \) on \( \mathbb{P}^1(k) \) is given by the formula:
 \[
@@ -116,7 +118,7 @@ Thus, the compatibility condition holds.
 
 Therefore, the formula defines a group action of \( \mathrm{GL}_2(k) \) on \( \mathbb{P}^1(k) \).
 
-\subsection*{Transitivity and the Stabilizer of 0}
+\item %\subsection*{Transitivity and the Stabilizer of 0}
 
 Let \( z \in \mathbb{P}^1(k) \) be arbitrary. We want to find a matrix \( A \in \mathrm{GL}_2(k) \) such that \( A \cdot 0 = z \). Let
 \[
@@ -141,7 +143,7 @@ We require \( A \cdot 0 = 0 \), so \( \frac{b}{d} = 0 \Rightarrow b = 0 \). Ther
 B = \left\{ \begin{pmatrix} a & 0 \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \ \middle| \ a, d \in k^\times, \ c \in k \right\}.
 \]
 
-\subsection*{Kernel of the Action}
+\item %\subsection*{Kernel of the Action}
 
 The kernel of the action can be defined as follows,
 \[
@@ -162,7 +164,7 @@ A = \begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} = aI, \quad \text{with } a \in 
 \]
 These are exactly the scalar matrices which form the center. Hence, the kernel of the action is the center of \( \mathrm{GL}_2(k) \).
 
-\subsection*{Intersection of Conjugates of the Stabilizer}
+\item %\subsection*{Intersection of Conjugates of the Stabilizer}
 
 Let \( B \subseteq \mathrm{GL}_2(k) \) be the stabilizer of \( 0 \in \mathbb{P}^1(k) \). We claim that
 \[
@@ -184,8 +186,12 @@ Therefore,
 \bigcap_{g \in \mathrm{GL}_2(k)} gBg^{-1} = Z(\mathrm{GL}_2(k)).
 \]
 
+\end{enumerate}
+
 \section*{Problem 2}
-Let \( X \) be the set of all \( k \)-element subsets of \( \{1, \dots, n\} \), and let \( S_n \) act on \( X \) by
+\begin{enumerate}[label=(\arabic*)] 
+
+\item Let \( X \) be the set of all \( k \)-element subsets of \( \{1, \dots, n\} \), and let \( S_n \) act on \( X \) by
 \[
 \sigma \cdot E := \{ \sigma(e) \mid e \in E \}.
 \]
@@ -195,10 +201,11 @@ Fix the subset \( A = \{1, \dots, k\} \in X \). The stabilizer of \( A \) consis
 \mathrm{Stab}_{S_n}(A) \cong S_k \times S_{n-k}.
 \]
 
-By the Orbit-Stabilizer Theorem, the number of \( k \)-element subsets is
+\item By the Orbit-Stabilizer Theorem, the number of \( k \)-element subsets is
 \[
 |X| = [S_n : \mathrm{Stab}_{S_n}(A)] = \frac{n!}{k!(n - k)!} = \binom{n}{k}.
 \]
+\end{enumerate}
 
 \section*{Problem 3}
 \subsection*{Group action}
