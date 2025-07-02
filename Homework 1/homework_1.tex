@@ -317,4 +317,29 @@ In the previous section we proved that, for a group \(G\) of order \(35\), the o
 
 Hence there is exactly 1 action of \(G\) on \(E\), namely the trivial action \(g\cdot x = x\) for all \(g\in G\) and \(x\in E\).
 
+\subsection*{Non trivial and non transitive group actions}
+Because \(|E| = 3\), the possible orbit decompositions are
+\(3\), \(2+1\), or \(1+1+1\).
+A single orbit of size \(3\) contradicts non-transitivity, while
+three singleton orbits give the trivial action.
+Hence \(E\) must split into one orbit of size \(2\) and one of size \(1\).
+
+Let \(y\) lie in the two-element orbit and \(x\) in the singleton orbit.
+By the Orbit-Stabiliser Theorem,
+\[
+|G| = |G\!\cdot\!y|\;|G_{y}| = 2\,|G_{y}|,\qquad
+|G| = |G\!\cdot\!x|\;|G_{x}| = 1\cdot |G_{x}|.
+\]
+Thus
+\[
+|G_{x}| = |G|,\qquad |G_{y}| = \frac{|G|}{2}.
+\]
+Because \(|G|\) is even, \(|G_{y}|\) is an integer, and
+the stabiliser of \(y\) has index \(2\) in \(G\).
+The action is genuinely non-trivial, because the two-element orbit is not fixed point-wise. There exists some \(g\in G\) with \(g\!\cdot\!y \neq y\).
+
+Therefore the only non-trivial, non-transitive action has two orbits
+of sizes \(2\) and \(1\). The singleton orbit is fixed point-wise, while
+the stabiliser of each point in the two-element orbit has index~\(2\) in
+\(G\).
 \end{document}
