@@ -51,31 +51,27 @@ Let \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \).
 AB = BA.
 \]
 
-Compute both sides:
+Where,
 \[
 AB = \begin{pmatrix} ae + bg & af + bh \\ ce + dg & cf + dh \end{pmatrix}, \quad
 BA = \begin{pmatrix} ea + fc & eb + fd \\ ga + hc & gb + hd \end{pmatrix}.
 \]
 
-For these to be equal for all \( e, f, g, h \in k \), compare the corresponding entries:
-
-\begin{align*}
-ae + bg &= ea + fc &\Rightarrow& \quad b = c = 0 \\
-af + bh &= eb + fd &\Rightarrow& \quad a = d, \text{ using } b = 0 \\
-ce + dg &= ga + hc &\Rightarrow& \quad c = b = 0 \\
-cf + dh &= gb + hd &\Rightarrow& \quad d = a
-\end{align*}
-
+For these to be equal \( \forall e, f, g, h \in k \), the corresponding entries must be;
+\[
+\begin{aligned}
+ae + bg &= ea + fc &\Longrightarrow&\; bg = fc \Longrightarrow b = c = 0,\\
+af + bh &= fd         &\Longrightarrow&\; af = fd \Longrightarrow a = d.\\
+\end{aligned}
+\]
 Hence, \( A \) must be of the form:
 \[
 A = \begin{pmatrix} \lambda & 0 \\ 0 & \lambda \end{pmatrix} = \lambda I,
 \]
-where \( \lambda \in k^\times = k \setminus \{0\} \) (since \( A \) must be invertible). Thus,
+where \( \lambda \in k^\times = k \setminus \{0\} \) as a consequence of the fact that \( A \) is invertible. Thus,
 \[
 Z(\mathrm{GL}_2(\mathbb{F}_7)) = \left\{ \lambda I \mid \lambda \in k^\times \right\}.
 \]
-
-This center consists of 6 elements and forms an abelian subgroup of \( \mathrm{GL}_2(\mathbb{F}_7) \).
 
 \item
 
