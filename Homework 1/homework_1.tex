@@ -100,10 +100,10 @@ in either case the same calculation gives \(A\cdot(B\cdot\infty)=(AB)\cdot\infty
 formula defines a group action of \(\mathrm{GL}_2(k)\) on \(\mathbb{P}^1(k)\).
 \item
 
-Let \( z \in \mathbb{P}^1(k) \) be arbitrary. We want to find a matrix \( A \in \mathrm{GL}_2(k) \) such that \( A \cdot 0 = z \). Let
-\[
+Let \( z \in \mathbb{P}^1(k) \) be arbitrary and let
+\(
 A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k).
-\]
+\)
 Then the action on \( 0 \) is given by
 \[
 A \cdot 0 = \frac{b}{d},
@@ -127,13 +127,12 @@ B = \left\{ \begin{pmatrix} a & 0 \\ c & d \end{pmatrix} \in \mathrm{GL}_2(k) \ 
 
 The kernel of the action can be defined as follows,
 \[
-\ker = \left\{ A \in \mathrm{GL}_2(k) \mid A \cdot z = z \text{ for all } z \in \mathbb{P}^1(k) \right\}.
+\ker = \left\{ A \in \mathrm{GL}_2(k) \mid A \cdot z = z, \forall z \in \mathbb{P}^1(k) \right\}.
 \]
 
-Then, for all \( z \in k \),
+Then, \(\forall z \in k \),
 \begin{align*}
-A \cdot z &= \frac{az + b}{cz + d} = z \\
-&\implies az + b = z(cz + d) = cz^2 + dz \\
+A \cdot z = \frac{az + b}{cz + d} = z &\implies az + b = z(cz + d) = cz^2 + dz \\
 &\implies cz^2 + (d - a)z - b = 0 \\
 &\implies \quad c = 0, \quad d = a, \quad b = 0.
 \end{align*}
