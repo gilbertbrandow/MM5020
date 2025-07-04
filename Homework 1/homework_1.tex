@@ -175,15 +175,16 @@ Therefore,
 \sigma \cdot E := \{ \sigma(e) \mid e \in E \}.
 \]
 
-Fix the subset \( A = \{1, \dots, k\} \in X \). The stabilizer of \( A \) consists of all permutations in \( S_n \) that fix \( A \) setwise. These are exactly the permutations that act as an element of \( S_k \) on the set \( \{1, \dots, k\} \), and as an element of \( S_{n-k} \) on its complement \( \{k+1, \dots, n\} \), independently. Thus,
+Fix the subset \( A = \{1, \dots, k\} \in X \). The stabilizer of \( A \) consists of all permutations in \( S_n \) that fix \( A \) setwise. 
+These are exactly the permutations that act as an element of \( S_k \) on the set \( \{1, \dots, k\} \), and as an element of \( S_{n-k} \) on its complement \( \{k+1, \dots, n\} \), independently. Thus,
 \[
 \mathrm{Stab}_{S_n}(A) \cong S_k \times S_{n-k}.
 \]
 
-\item By the Orbit-Stabilizer Theorem, the number of \( k \)-element subsets is
-\[
-|X| = [S_n : \mathrm{Stab}_{S_n}(A)] = \frac{n!}{k!(n - k)!} = \binom{n}{k}.
-\]
+\item By the Orbit-Stabiliser Theorem and the isomorphism found in previous section,
+\begin{align*}
+|X| &= \frac{|S_n|}{\bigl|\mathrm{Stab}_{S_n}(A)\bigr|} = \frac{n!}{|S_k| \cdot|S_{n-k}| } = \frac{n!}{k!(n - k)!} = \binom{n}{k}
+\end{align*}
 \end{enumerate}
 
 \section*{Problem 3}
