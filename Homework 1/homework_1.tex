@@ -192,11 +192,17 @@ These are exactly the permutations that act as an element of \( S_k \) on the se
 \begin{enumerate}[label=(\arabic*)] 
 
 \item To verify that \( \phi \) defines a group action, we check the two axioms. For all \( gH \in G/H \), 
-\[e \cdot gH = (eg)H = gH.\]
+\[
+\phi(e,gH)=(eg)H = gH .
+\]
 For all \( h_1, h_2 \in H \) and \( gH \in G/H \), 
-\[h_1 \cdot (h_2 \cdot gH) = h_1 \cdot (h_2 g H) = (h_1 h_2 g)H = ((h_1 h_2) \cdot gH).\]
-
-Hence, the identity and compatibility axioms are satisfied. Since we are viewing \( G/H \) purely as a set of left cosets, this confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
+\[
+\phi\bigl(h_1,\phi(h_2,gH)\bigr)
+     =\phi\bigl(h_1,(h_2g)H\bigr)
+     =(h_1h_2g)H
+     =\phi\bigl(h_1h_2,gH\bigr).
+\]
+Hence, the identity and compatibility axioms are satisfied. This confirms that \( \phi \) defines a group action of \( H \) on the set \( G/H \).
 
 \item
 
