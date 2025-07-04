@@ -319,9 +319,7 @@ An action of \(G\) on the set \(E=\{1,2,3\}\) is equivalent to a group homomorph
 \[
 \rho : G \longrightarrow \operatorname{Sym}(E)=S_{3}.
 \]
-In the previous section we proved that, for a group \(G\) of order \(35\), the only homomorphism \(G\to S_{3}\) is the trivial one.  
-
-Hence there is exactly 1 action of \(G\) on \(E\), namely the trivial action \(g\cdot x = x\) for all \(g\in G\) and \(x\in E\).
+In the previous section we proved that, for a group \(G\) of order \(35\), the only homomorphism \(G\to S_{3}\) is the trivial one. Hence there is exactly 1 action of \(G\) on \(E\).
 
 \item
 Because \(|E| = 3\), the possible orbit decompositions are
@@ -340,8 +338,11 @@ Thus
 \[
 |G_{x}| = |G|,\qquad |G_{y}| = \frac{|G|}{2}.
 \]
-Because \(|G|\) is even, \(|G_{y}|\) is an integer, and
-the stabiliser of \(y\) has index \(2\) in \(G\).
+Because \(|G|\) is even, the quotient \(\dfrac{|G|}{2}\) is an integer; hence 
+\[
+|G_{y}|=\frac{|G|}{2}\in\mathbb{Z},
+\]
+so the stabiliser \(G_{y}\) is indeed a subgroup of \(G\) of index \(2\).
 The action is genuinely non-trivial, because the two-element orbit is not fixed point-wise. There exists some \(g\in G\) with \(g\!\cdot\!y \neq y\).
 
 Therefore the only non-trivial, non-transitive action has two orbits
@@ -358,9 +359,7 @@ By the Orbit-Stabiliser Theorem,
 \[
 |G| \;=\; |G\!\cdot\!y|\,|G_{y}| \;=\; 2\,|G_{y}|.
 \]
-Hence \(|G_{y}| = |G|/2\), but \(|G|\) is odd, so \(|G|/2\notin\mathbb Z\) which is a contradiction.
-
-Consequently an odd-order group cannot have a non-transitive, non-trivial action on a three-element set.
+Hence \(|G_{y}| = |G|/2\), but \(|G|\) is odd, so \(|G|/2\notin\mathbb Z\) which is a contradiction. Consequently an odd-order group cannot have a non-transitive, non-trivial action on a three-element set.
 \end{enumerate}
 
 \end{document}
