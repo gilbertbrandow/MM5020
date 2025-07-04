@@ -233,20 +233,31 @@ This is a contradiction. Hence, the action cannot be transitive.
 
 \item
 
-From the theory of group actions, we have the orbit decomposition:
+From the theory of group actions, we have the orbit decomposition
 \[
 |G/H| = \sum_{i=1}^r |\mathcal{O}_i|,
 \]
-where \( \mathcal{O}_i \) are the distinct orbits of the action of \( H \) on the set \( G/H \).
+where each \(\mathcal{O}_i\) is an \(H\)-orbit in \(G/H\).
 
-Since \( |G/H| = p \), a prime number, the possible orbit decompositions are very limited. One possibility is that there is a single orbit of size \( p \), but this would imply that the action is transitive, which we ruled out in the previous section. Another possibility is that there is one orbit of size 1 and one of size \( p - 1 \), but the size of each orbit must divide \( |H| = |G|/p \). Since \( p \) is the smallest prime dividing \( |G| \), it does not divide \( |G|/p \), and therefore cannot divide any orbit size greater than 1.
-
-The only remaining possibility is that all orbits have size 1. That means:
+Because \(|G/H| = p\) is prime, the only possible orbit partitions are
 \[
-(hg)H = gH \quad \forall h \in H,\, gH \in G/H,
+p,\quad 1 + (p-1),\quad \text{or } 1 + 1 + \dots + 1 \,(p\text{ times}).
 \]
-which implies \( hg \in gH \Rightarrow g^{-1}hg \in H \), i.e., \( H \) is invariant under conjugation by all \( g \in G \). Therefore, \( H \trianglelefteq G \).
-\end{enumerate}
+One orbit of size \(p\) would make the action transitive, contradicting
+part~(3).  
+If there were orbits of sizes \(1\) and \(p-1\), then \(p-1\) divides
+\(|H| = |G|/p\).  But \(p-1\) has a prime divisor \(q < p\); this would
+force \(q\mid |H|\) and hence \(q\mid |G|\), contradicting that \(p\) is
+the smallest prime dividing \(|G|\).
+
+Therefore every orbit has size \(1\).  Hence, for all \(h\in H\) and
+\(g\in G\),
+\[
+(hg)H = gH \quad\Longrightarrow\quad g^{-1}hg \in H.
+\]
+Thus \(g^{-1}Hg \subseteq H\) for every \(g\in G\), and likewise
+\(H \subseteq g^{-1}Hg\); hence \(g^{-1}Hg = H\).  Therefore
+\(H \trianglelefteq G\).
 
 \section*{Problem 4}
 
