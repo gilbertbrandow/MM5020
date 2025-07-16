@@ -19,20 +19,20 @@ with $\beta \in [1, \alpha]$ and $d \mid m$, where $p \nmid d$. Consider the sub
 \[
 |N \cap P| = p^\gamma,
 \]
-where $\gamma \leq \beta$, hence $N \cap P$ must be a p-subgroup of $N$.
+where $\gamma \leq \beta$, hence $N \cap P$ must be a $p$-subgroup of $N$.
 
 Consider the subgroup $NP$ which contains $N$ and $P$. Since $N \vartriangleleft G$ and $P \leq G$ we may apply the following formula,
 \[ 
     |NP| = \frac{|N||P|}{|N \cap P|} = \frac{p^{\alpha + \beta} d}{p^\gamma} = p^{\alpha + \beta - \gamma}d
 \]
-Since $P$ is a p-Sylow subgroup of $G$ it must also be a p-Sylow subgroup in any subgroup of $G$ containing it. 
+Since $P$ is a $p$-Sylow subgroup of $G$ it must also be a $p$-Sylow subgroup in any subgroup of $G$ containing it. 
 Therefore, its index in $NP$ must be relatively prime to $p$. 
 \[
     [NP : P] = \frac{|NP|}{|P|} = \frac{p^{\alpha + \beta - \gamma}d}{p^\alpha} = p^{\beta - \gamma}d \implies p^{\beta - \gamma} = 1 \implies \beta = \gamma. 
 \]
-This shows $|N \cap P|=p^\beta$, which means it is a p-Sylow subgroup of $N$.
+This shows $|N \cap P|=p^\beta$, which means it is a $p$-Sylow subgroup of $N$.
 
-The quotient group $G/N$ inherits a finite order, $|G/N| = \frac{|G|}{|N|} = \frac{p^\alpha m}{p^\beta d} = p^{\alpha - \beta} \frac{m}{d}$. A p-Sylow subgroup must therefore be of order $p^{\alpha-\beta}$.
+The quotient group $G/N$ inherits a finite order, $|G/N| = \frac{|G|}{|N|} = \frac{p^\alpha m}{p^\beta d} = p^{\alpha - \beta} \frac{m}{d}$. A $p$-Sylow subgroup must therefore be of order $p^{\alpha-\beta}$.
 Since we concluded $\gamma = \beta$, $|NP| = p^\alpha d$. Moreover $|N| = p^\beta d$. This allows us to construct a candidate subgroup with the correct order, $NP/N$
 \[ 
 |NP/N| = \frac{|NP|}{|N|} = \frac{p^\alpha d}{p^\beta d} = p^{\alpha - \beta}
@@ -40,6 +40,45 @@ Since we concluded $\gamma = \beta$, $|NP| = p^\alpha d$. Moreover $|N| = p^\bet
 Finally, since $NP$ is a subgroup of $G$ containing $N$, the quotient $NP/N$ is a subgroup of $G/N$. Therefore, $NP/N$ is a subgroup of order $p^{\alpha - \beta}$ in $G/N$, and hence is a $p$-Sylow subgroup of $G/N$.
 
 \section*{Problem 2}
+\begin{enumerate}[label=(\arabic*)] 
+    \item Naturally, since both $P$ and $Q$ are Sylow $p$-subgroups of the finite group $G$, 
+the well-known Sylow theorem assures us $P$ and $Q$ are conjugate.
+
+    \item 
+
+\textbf{($\subseteq$)} Let $g \in N_G(P)$, so by definition $gPg^{-1} = P$. Since $f$ is a homomorphism, we have:
+\[
+f(g)f(P)f(g)^{-1} = f(gPg^{-1}) = f(P),
+\]
+which implies $f(g) \in N_H(f(P))$. Therefore, $f(N_G(P)) \subseteq N_H(f(P))$.
+
+\textbf{($\supseteq$)} Now let $h \in N_H(f(P))$. Since $f$ is surjective, there exists $g \in G$ such that $f(g) = h$. Consider the conjugate subgroup $gPg^{-1} \leq G$. Then:
+\[
+f(gPg^{-1}) = f(g)f(P)f(g)^{-1} = h f(P) h^{-1} = f(P),
+\]
+so $f(gPg^{-1}) = f(P)$. By Problem 2.1, it follows that $gPg^{-1}$ and $P$ are conjugate in $G$; that is, there exists $x \in G$ such that $xgPg^{-1}x^{-1} = P$. Define $y = xg$, then:
+\[
+yPy^{-1} = xgPg^{-1}x^{-1} = P \Rightarrow y \in N_G(P),
+\]
+and since $f(y) = f(xg) = f(x)f(g)$, we get:
+\[
+f(g) = f(x)^{-1}f(y) \in f(N_G(P)).
+\]
+Thus $h = f(g) \in f(N_G(P))$, so $N_H(f(P)) \subseteq f(N_G(P))$.
+
+\item 
+Assume that $p$ does not divide the order of $H$. Let $P$ be a $p$-Sylow subgroup of $G$. 
+
+Since $|f(P)|$ divides $|H|$ and $p \nmid |H|$, it follows that $|f(P)| = 1$, i.e.,
+\[
+f(P) \subseteq \ker(f).
+\]
+
+From Problem 2.2, we know that $f(N_G(P)) = N_H(f(P))$. Since $f(P)$ is trivial, its normaliser is all of $H$, so:
+\[
+N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
+\]
+\end{enumerate}
 \section*{Problem 3}
 \section*{Problem 4}
 \section*{Problem 5}
