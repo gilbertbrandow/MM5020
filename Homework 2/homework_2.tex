@@ -8,4 +8,34 @@
 \begin{document}
 \maketitle
 
+\section*{Problem 1}
+
+Let $|G| = p^\alpha m$, where $p$ is a prime, $\alpha \geq 1$ and $p \nmid m$. By definition of a $p$-Sylow subgroup, we have $|P| = p^\alpha$.
+Since $N \vartriangleleft G$, Lagrange's theorem implies $|N| \mid |G|$. Thus, we can write:
+\[
+|N| = p^\beta d,
+\]
+with $\beta \in [1, \alpha]$ and $d \mid m$, where $p \nmid d$. Consider the subgroup $N \cap P$. Since $N \cap P \leq P$, again applying Lagrange's theorem gives $|N \cap P| \mid |P| = p^\alpha$. Therefore, we must have:
+\[
+|N \cap P| = p^\gamma,
+\]
+where $\gamma \leq \beta$, hence $N \cap P$ must be a p-subgroup of $N$.
+
+Consider the subgroup $NP$ which contains $N$ and $P$. Since $N \vartriangleleft G$ and $P \leq G$ we may apply the following formula,
+\[ 
+    |NP| = \frac{|N||P|}{|N \cap P|} = \frac{p^{\alpha + \beta} d}{p^\gamma} = p^{\alpha + \beta - \gamma}d
+\]
+Since $P$ is a p-Sylow subgroup of $G$ it must also be a p-Sylow subgroup in any subgroup of $G$ containing it. 
+Therefore, its index in $NP$ must be relatively prime to $p$. 
+\[
+    [NP : P] = \frac{|NP|}{|P|} = \frac{p^{\alpha + \beta - \gamma}d}{p^\alpha} = p^{\beta - \gamma}d \implies p^{\beta - \gamma} = 1 \implies \beta = \gamma. 
+\]
+This shows $|N \cap P|=p^\beta$, which means it is a p-Sylow subgroup of $N$.
+
+\section*{Problem 2}
+\section*{Problem 3}
+\section*{Problem 4}
+\section*{Problem 5}
+\section*{Problem 6}
+
 \end{document}
