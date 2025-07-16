@@ -131,6 +131,52 @@ Since $H$ contains elements of order 4 but none of order 8, it cannot be cyclic,
 H \cong \mathbb{Z}_4 \times \mathbb{Z}_2.
 \]
 \section*{Problem 5}
+\begin{enumerate}[label=(\arabic*)] 
+
+\item Assume $G/Z$ is cyclic, so there exists $g \in G$ such that every element of $G/Z$ is of the form $g^nZ$ for some $n \in \mathbb{Z}$. Then for any $x \in G$, there exists $n \in \mathbb{Z}$ and $z \in Z$ such that:
+\[
+x = g^n z.
+\]
+
+Now let $x = g^n z$ and $y = g^m z'$, with $z, z' \in Z$. Then:
+\[
+xy = g^n z \cdot g^m z' = g^{n+m} zz', \quad \text{and} \quad yx = g^m z' \cdot g^n z = g^{m+n} z'z.
+\]
+
+Since $Z \subseteq Z(G)$, we have $zz' = z'z$, so:
+\[
+xy = yx.
+\]
+
+Thus, any two elements of $G$ commute, so $G$ is abelian.
+
+\item Since $G$ is a $p$-group, its center $Z(G)$ is nontrivial. Hence, $|Z(G)| = p$ or $p^2$. 
+If $|Z(G)| = p^2$, then $Z(G) = G$, so $G$ is abelian. 
+If $|Z(G)| = p$, then the quotient group $G/Z(G)$ has order $p$ and is cyclic. By previous section, if $G/Z(G)$ is cyclic and $Z(G)$ is central, then $G$ is abelian. 
+Therefore, in both cases, $G$ is abelian.
+
+\item Let $p$ be a prime. Up to isomorphism, there are exactly two groups of order $p^2$:
+\[
+\mathbb{Z}_{p^2}, \quad \mathbb{Z}_p \times \mathbb{Z}_p.
+\]
+
+These are the only abelian groups of order $p^2$, and by previous sectio, all groups of this order are abelian. Therefore, this list is complete up to isomorphism.
+\end{enumerate}
 \section*{Problem 6}
+\begin{enumerate}[label=(\arabic*)] 
+\item Since $A \cong \mathbb{Z}_n$, any homomorphism $\chi \in \widehat{A}$ is determined by the image of a generator, and this image must be an $n$-th root of unity. Therefore, $\widehat{A} \cong \mu_n$, the group of $n$-th roots of unity, which is cyclic of order $n$. 
+Hence, $\widehat{A}$ is cyclic of order $n$.
+
+\item By the structure theorem for finite abelian groups, $A$ is isomorphic to a product of cyclic groups:
+\[
+A \cong \mathbb{Z}_{n_1} \times \cdots \times \mathbb{Z}_{n_k}.
+\]
+Then,
+\[
+\widehat{A} \cong \widehat{\mathbb{Z}_{n_1}} \times \cdots \times \widehat{\mathbb{Z}_{n_k}},
+\]
+and each $\widehat{\mathbb{Z}_{n_i}} \cong \mathbb{Z}_{n_i}$. Therefore, $\widehat{A} \cong A$, so $|\widehat{A}| = |A| = n$.
+\end{enumerate}
+
 
 \end{document}
