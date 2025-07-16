@@ -80,6 +80,43 @@ N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
 \]
 \end{enumerate}
 \section*{Problem 3}
+\begin{enumerate}[label=(\arabic*)] 
+\item (a) By Sylow's theorems, the number $n_5$ of $5$-Sylow subgroups satisfies $n_5 \equiv 1 \mod 5$ and divides $3$, so $n_5 = 1$. 
+A unique Sylow subgroup is always normal, so $G$ has a normal subgroup of order $5$.
+
+(b) Let $P_3$ and $P_5$ be the Sylow 3- and 5-subgroups of $G$, with $|P_3| = 3$ and $|P_5| = 5$.
+
+Since $|P_3|$ and $|P_5|$ are relatively prime and both subgroups are cyclic, as all groups of prime order are, and one of them is normal, it follows that:
+\[
+G \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/15,
+\]
+so $G$ is cyclic.
+
+\item Again by Sylow's theorems, the number $n_p$ of $p$-Sylow subgroups satisfies $n_p \equiv 1 \mod p$ and divides $q$, so $n_p = 1$ or $q$. 
+Similarly, $n_q \equiv 1 \mod q$ and divides $p$, so $n_q = 1$ or $p$.
+
+Suppose for contradiction that $n_q = p$. Then:
+\[
+p \equiv 1 \mod q \Rightarrow p \equiv 1 \pmod{q},
+\]
+which contradicts the assumption $p \not\equiv 1 \pmod{q}$. Therefore, $n_q = 1$, and the $q$-Sylow subgroup is unique and hence normal.
+
+All groups of prime order are cyclic, so both the $p$-Sylow and $q$-Sylow subgroups are cyclic.
+
+Let $P$ and $Q$ denote the $p$- and $q$-Sylow subgroups, with $Q \trianglelefteq G$ and $P \cap Q = \{e\}$. Since $|P||Q| = pq = |G|$ and $Q$ is normal, we have:
+\[
+G \cong P \times Q \cong \mathbb{Z}/p \times \mathbb{Z}/q \cong \mathbb{Z}/pq,
+\]
+because $p$ and $q$ are relatively prime. Hence, $G$ is cyclic.
+
+\item (a) Once again by Sylow's theorems, the number $n_3$ of $3$-Sylow subgroups satisfies $n_3 \equiv 1 \mod 3$ and divides $4$. Thus, $n_3 = 1$ or $4$.
+The number $n_2$ of $2$-Sylow subgroups satisfies $n_2 \equiv 1 \mod 2$ and divides $3$. So $n_2 = 1$ or $3$.
+
+If either $n_3 = 1$ or $n_2 = 1$, the corresponding Sylow subgroup is unique and hence normal. Therefore, $G$ always has a normal subgroup.
+
+(b) An example of a non-cyclic group of order $12$ is the alternating group $A_4$, the group of even permutations on 4 elements. It has order 12 but is not cyclic.
+
+\end{enumerate}
 \section*{Problem 4}
 \section*{Problem 5}
 \section*{Problem 6}
