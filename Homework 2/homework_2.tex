@@ -56,7 +56,7 @@ which implies $f(g) \in N_H(f(P))$. Therefore, $f(N_G(P)) \subseteq N_H(f(P))$.
 \[
 f(gPg^{-1}) = f(g)f(P)f(g)^{-1} = h f(P) h^{-1} = f(P),
 \]
-so $f(gPg^{-1}) = f(P)$. By Problem 2.1, it follows that $gPg^{-1}$ and $P$ are conjugate in $G$; that is, there exists $x \in G$ such that $xgPg^{-1}x^{-1} = P$. Define $y = xg$, then:
+so $f(gPg^{-1}) = f(P)$. By previous section, it follows that $gPg^{-1}$ and $P$ are conjugate in $G$; that is, there exists $x \in G$ such that $xgPg^{-1}x^{-1} = P$. Define $y = xg$, then:
 \[
 yPy^{-1} = xgPg^{-1}x^{-1} = P \Rightarrow y \in N_G(P),
 \]
@@ -67,14 +67,12 @@ f(g) = f(x)^{-1}f(y) \in f(N_G(P)).
 Thus $h = f(g) \in f(N_G(P))$, so $N_H(f(P)) \subseteq f(N_G(P))$.
 
 \item 
-Assume that $p$ does not divide the order of $H$. Let $P$ be a $p$-Sylow subgroup of $G$. 
-
 Since $|f(P)|$ divides $|H|$ and $p \nmid |H|$, it follows that $|f(P)| = 1$, i.e.,
 \[
 f(P) \subseteq \ker(f).
 \]
 
-From Problem 2.2, we know that $f(N_G(P)) = N_H(f(P))$. Since $f(P)$ is trivial, its normaliser is all of $H$, so:
+From previous section, we know that $f(N_G(P)) = N_H(f(P))$. Since $f(P)$ is trivial, its normaliser is all of $H$, so:
 \[
 N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
 \]
@@ -85,7 +83,6 @@ N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
 A unique Sylow subgroup is always normal, so $G$ has a normal subgroup of order $5$.
 
 (b) Let $P_3$ and $P_5$ be the Sylow 3- and 5-subgroups of $G$, with $|P_3| = 3$ and $|P_5| = 5$.
-
 Since $|P_3|$ and $|P_5|$ are relatively prime and both subgroups are cyclic, as all groups of prime order are, and one of them is normal, it follows that:
 \[
 G \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/15,
@@ -93,16 +90,14 @@ G \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/1
 so $G$ is cyclic.
 
 \item Again by Sylow's theorems, the number $n_p$ of $p$-Sylow subgroups satisfies $n_p \equiv 1 \mod p$ and divides $q$, so $n_p = 1$ or $q$. 
-Similarly, $n_q \equiv 1 \mod q$ and divides $p$, so $n_q = 1$ or $p$.
-
+Similarly, $n_q \equiv 1 \mod q$ and divides $p$, so $n_q = 1$ or $p$. 
 Suppose for contradiction that $n_q = p$. Then:
 \[
 p \equiv 1 \mod q \Rightarrow p \equiv 1 \pmod{q},
 \]
 which contradicts the assumption $p \not\equiv 1 \pmod{q}$. Therefore, $n_q = 1$, and the $q$-Sylow subgroup is unique and hence normal.
 
-All groups of prime order are cyclic, so both the $p$-Sylow and $q$-Sylow subgroups are cyclic.
-
+All groups of prime order are cyclic, so both the $p$-Sylow and $q$-Sylow subgroups are cyclic. 
 Let $P$ and $Q$ denote the $p$- and $q$-Sylow subgroups, with $Q \trianglelefteq G$ and $P \cap Q = \{e\}$. Since $|P||Q| = pq = |G|$ and $Q$ is normal, we have:
 \[
 G \cong P \times Q \cong \mathbb{Z}/p \times \mathbb{Z}/q \cong \mathbb{Z}/pq,
