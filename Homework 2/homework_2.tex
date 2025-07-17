@@ -67,9 +67,19 @@ f(g) = f(x)^{-1}f(y) \in f(N_G(P)).
 Thus $h = f(g) \in f(N_G(P))$, so $N_H(f(P)) \subseteq f(N_G(P))$.
 
 \item 
-Since $|f(P)|$ divides $|H|$ and $p \nmid |H|$, it follows that $|f(P)| = 1$, i.e.,
+Since $P \leq G$ and $f$ is a group homomorphism, we have $f(P) \leq H$, so $|f(P)| \mid |H|$. By the First Isomorphism Theorem, we have:
 \[
-f(P) \subseteq \ker(f).
+P / \ker(f|_P) \cong f(P),
+\]
+so
+\[
+|f(P)| = \frac{|P|}{|\ker(f|_P)|} = \frac{p^\alpha}{|\ker(f|_P)|},
+\]
+which implies that $|f(P)| = p^\beta$ for some $\beta \in [0, \alpha]$.
+
+Since $p \nmid |H|$ and $|f(P)| \mid |H|$, the only possibility is $|f(P)| = 1$. Therefore,
+\[
+f(P) = \{e\} \subseteq \ker(f).
 \]
 
 From previous section, we know that $f(N_G(P)) = N_H(f(P))$. Since $f(P)$ is trivial, its normaliser is all of $H$, so:
