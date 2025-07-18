@@ -10,35 +10,33 @@
 
 \section*{Problem 1}
 
-Let $|G| = p^\alpha m$, where $p$ is a prime, $\alpha \geq 1$ and $p \nmid m$. By definition of a $p$-Sylow subgroup, we have $|P| = p^\alpha$.
-Since $N \vartriangleleft G$, Lagrange's theorem implies $|N| \mid |G|$. Thus, we can write:
+Write \(|G| = p^{\alpha}m\) with \(p\nmid m\) and \(|P|=p^{\alpha}\).  
+Because \(N\trianglelefteq G\), Lagrange gives \(|N|=p^{\beta}d\) where \(0\le\beta\le\alpha\) and \(p\nmid d\). First consider \(N\cap P\).  Since \(N\cap P\le P\), we have
 \[
-|N| = p^\beta d,
+|N\cap P|\mid |P|=p^{\alpha}\quad\Longrightarrow\quad|N\cap P|=p^{\gamma}
 \]
-with $\beta \in [1, \alpha]$ and $d \mid m$, where $p \nmid d$. Consider the subgroup $N \cap P$. Since $N \cap P \leq P$, again applying Lagrange's theorem gives $|N \cap P| \mid |P| = p^\alpha$. Therefore, we must have:
+for some \(0\le\gamma\le\beta\); thus \(N\cap P\) is a \(p\)-subgroup of \(N\).
+
+Next form \(NP\le G\).  Using \(|NP|=\dfrac{|N||P|}{|N\cap P|}\) we compute
 \[
-|N \cap P| = p^\gamma,
+|NP|=\frac{p^{\beta}d\;p^{\alpha}}{p^{\gamma}}=p^{\alpha+\beta-\gamma}d,
+\qquad
+[NP:P]=\frac{|NP|}{|P|}=p^{\beta-\gamma}d .
 \]
-where $\gamma \leq \beta$, hence $N \cap P$ must be a $p$-subgroup of $N$.
+Because \(P\le NP\le G\), the index \([NP:P]\) divides \([G:P]=m\); since \(p\nmid m\) we must have \(p^{\beta-\gamma}=1\).  Hence \(\beta=\gamma\) and \( |N\cap P|=p^{\beta}\).  This shows \(N\cap P\) attains the maximal power of \(p\) dividing \(|N|\), so \(N\cap P\) is a Sylow \(p\)-subgroup of \(N\).
 
-Consider the subgroup $NP$ which contains $N$ and $P$. Since $N \vartriangleleft G$ and $P \leq G$ we may apply the following formula,
-\[ 
-    |NP| = \frac{|N||P|}{|N \cap P|} = \frac{p^{\alpha + \beta} d}{p^\gamma} = p^{\alpha + \beta - \gamma}d
-\]
-Since $P$ is a $p$-Sylow subgroup of $G$ it must also be a $p$-Sylow subgroup in any subgroup of $G$ containing it. 
-Therefore, its index in $NP$ must be relatively prime to $p$. 
+For the quotient \(G/N\) we have
 \[
-    [NP : P] = \frac{|NP|}{|P|} = \frac{p^{\alpha + \beta - \gamma}d}{p^\alpha} = p^{\beta - \gamma}d \implies p^{\beta - \gamma} = 1 \implies \beta = \gamma. 
+|G/N|=\frac{|G|}{|N|}=\frac{p^{\alpha}m}{p^{\beta}d}=p^{\alpha-\beta}\frac{m}{d},
 \]
-This shows $|N \cap P|=p^\beta$, which means it is a $p$-Sylow subgroup of $N$.
-
-The quotient group $G/N$ inherits a finite order, $|G/N| = \frac{|G|}{|N|} = \frac{p^\alpha m}{p^\beta d} = p^{\alpha - \beta} \frac{m}{d}$. A $p$-Sylow subgroup must therefore be of order $p^{\alpha-\beta}$.
-Since we concluded $\gamma = \beta$, $|NP| = p^\alpha d$. Moreover $|N| = p^\beta d$. This allows us to construct a candidate subgroup with the correct order, $NP/N$
-\[ 
-|NP/N| = \frac{|NP|}{|N|} = \frac{p^\alpha d}{p^\beta d} = p^{\alpha - \beta}
+so any Sylow \(p\)-subgroup of \(G/N\) has order \(p^{\alpha-\beta}\).
+Since \(N\le NP\), the subgroup \(NP/N\le G/N\) satisfies
+\[
+|NP/N|=\frac{|NP|}{|N|}=\frac{p^{\alpha}d}{p^{\beta}d}=p^{\alpha-\beta},
 \]
-Finally, since $NP$ is a subgroup of $G$ containing $N$, the quotient $NP/N$ is a subgroup of $G/N$. Therefore, $NP/N$ is a subgroup of order $p^{\alpha - \beta}$ in $G/N$, and hence is a $p$-Sylow subgroup of $G/N$.
+hence \(NP/N\) is a Sylow \(p\)-subgroup of \(G/N\).
 
+Thus \(N\cap P\) is Sylow-\(p\) in \(N\), and \(NP/N\) is Sylow-\(p\) in \(G/N\).
 \section*{Problem 2}
 \begin{enumerate}[label=(\arabic*)] 
     \item Naturally, since both $P$ and $Q$ are Sylow $p$-subgroups of the finite group $G$, 
