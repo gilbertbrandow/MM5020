@@ -37,53 +37,49 @@ Since \(N\le NP\), the subgroup \(NP/N\le G/N\) satisfies
 hence \(NP/N\) is a Sylow \(p\)-subgroup of \(G/N\).
 
 Thus \(N\cap P\) is Sylow-\(p\) in \(N\), and \(NP/N\) is Sylow-\(p\) in \(G/N\).
+
 \section*{Problem 2}
-\begin{enumerate}[label=(\arabic*)] 
-    \item Naturally, since both $P$ and $Q$ are Sylow $p$-subgroups of the finite group $G$, 
-the well-known Sylow theorem assures us $P$ and $Q$ are conjugate.
+\begin{enumerate}[label=(\arabic*)]
 
-    \item 
+\item
+Let \(N=\ker f\).  For any subgroup \(S\le G\) one has
+\[
+f^{-1}\!\bigl(f(S)\bigr)=NS,
+\]
+because every element mapping into \(f(S)\) differs from an element of \(S\) by an element of \(N\).
 
-\textbf{($\subseteq$)} Let $g \in N_G(P)$, so by definition $gPg^{-1} = P$. Since $f$ is a homomorphism, we have:
+Assume \(f(P)=f(Q)\).  Then
 \[
-f(g)f(P)f(g)^{-1} = f(gPg^{-1}) = f(P),
+P,\;Q\;\subseteq\;f^{-1}\!\bigl(f(P)\bigr)=NP ,
 \]
-which implies $f(g) \in N_H(f(P))$. Therefore, $f(N_G(P)) \subseteq N_H(f(P))$.
+so \(P\) and \(Q\) are both Sylow \(p\)-subgroups of the same subgroup \(NP\).
+Sylow's conjugacy theorem applied inside \(NP\) gives an element
+\(x\in NP\subseteq G\) with \(xPx^{-1}=Q\).
+Hence \(P\) and \(Q\) are conjugate in \(G\).
 
-\textbf{($\supseteq$)} Now let $h \in N_H(f(P))$. Since $f$ is surjective, there exists $g \in G$ such that $f(g) = h$. Consider the conjugate subgroup $gPg^{-1} \leq G$. Then:
+\item
+For the inclusion \(f\!\bigl(N_G(P)\bigr)\subseteq
+N_H\!\bigl(f(P)\bigr)\) let \(g\in N_G(P)\); then \(gPg^{-1}=P\) and
 \[
-f(gPg^{-1}) = f(g)f(P)f(g)^{-1} = h f(P) h^{-1} = f(P),
+f(g)f(P)f(g)^{-1}=f(gPg^{-1})=f(P),
 \]
-so $f(gPg^{-1}) = f(P)$. By previous section, it follows that $gPg^{-1}$ and $P$ are conjugate in $G$; that is, there exists $x \in G$ such that $xgPg^{-1}x^{-1} = P$. Define $y = xg$, then:
-\[
-yPy^{-1} = xgPg^{-1}x^{-1} = P \Rightarrow y \in N_G(P),
-\]
-and since $f(y) = f(xg) = f(x)f(g)$, we get:
-\[
-f(g) = f(x)^{-1}f(y) \in f(N_G(P)).
-\]
-Thus $h = f(g) \in f(N_G(P))$, so $N_H(f(P)) \subseteq f(N_G(P))$.
+so \(f(g)\in N_H(f(P))\).
 
-\item 
-Since $P \leq G$ and $f$ is a group homomorphism, we have $f(P) \leq H$, so $|f(P)| \mid |H|$. By the First Isomorphism Theorem, we have:
-\[
-P / \ker(f|_P) \cong f(P),
-\]
-so
-\[
-|f(P)| = \frac{|P|}{|\ker(f|_P)|} = \frac{p^\alpha}{|\ker(f|_P)|},
-\]
-which implies that $|f(P)| = p^\beta$ for some $\beta \in [0, \alpha]$.
+Conversely, let \(h\in N_H(f(P))\).  Choose \(g\in G\) with \(f(g)=h\).
+Since
+\(f(gPg^{-1})=f(g)f(P)f(g)^{-1}=f(P)\),
+part (1) implies \(gPg^{-1}\) is conjugate to \(P\) in \(G\):
+there exists \(x\in G\) with \(xgPg^{-1}x^{-1}=P\).
+Put \(y=xg\); then \(y\in N_G(P)\) and
+\(h=f(g)=f(x)^{-1}f(y)\in f\!\bigl(N_G(P)\bigr)\).
+Hence \(N_H(f(P))\subseteq f\!\bigl(N_G(P)\bigr)\).
 
-Since $p \nmid |H|$ and $|f(P)| \mid |H|$, the only possibility is $|f(P)| = 1$. Therefore,
-\[
-f(P) = \{e\} \subseteq \ker(f).
-\]
+Therefore \(f\!\bigl(N_G(P)\bigr)=N_H\!\bigl(f(P)\bigr)\).
 
-From previous section, we know that $f(N_G(P)) = N_H(f(P))$. Since $f(P)$ is trivial, its normaliser is all of $H$, so:
-\[
-N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
-\]
+\item
+If \(p\nmid |H|\) then \(|f(P)|\mid|H|\) and \(|f(P)|\) is a power of \(p\); hence \(|f(P)|=1\) and \(f(P)=\{e\}\subseteq\ker f\).
+From part (2) we have \(f\!\bigl(N_G(P)\bigr)=N_H(f(P))=H\),
+because the normaliser of the trivial subgroup is all of \(H\).
 \end{enumerate}
 
 \section*{Problem 3}
