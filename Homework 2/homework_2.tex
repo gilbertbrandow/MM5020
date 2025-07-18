@@ -83,38 +83,48 @@ because the normaliser of the trivial subgroup is all of \(H\).
 \end{enumerate}
 
 \section*{Problem 3}
-\begin{enumerate}[label=(\arabic*)] 
-\item (a) By Sylow's theorems, the number $n_5$ of $5$-Sylow subgroups satisfies $n_5 \equiv 1 \mod 5$ and $n_5 \mid \frac{|G|}{p^k} = \frac{15}{5} = 3$, so $n_5 = 1$. 
-A unique Sylow subgroup is always normal, so $G$ has a normal subgroup of order $5$.
+\begin{enumerate}[label=(\arabic*)]
 
-(b) Let $P_3$ and $P_5$ be the Sylow 3- and 5-subgroups of $G$, with $|P_3| = 3$ and $|P_5| = 5$. Since $|P_3| = 3$ and $|P_5| = 5$ are relatively prime, and $|P_3||P_5| = 15 = |G|$, it follows that $P_3 \cap P_5 = \{e\}$. Moreover, $P_5$ is normal in $G$ by part (a), and both $P_3$ and $P_5$ are cyclic because all groups of prime order are cyclic.
-Therefore, the internal direct product $P_3 P_5$ is a subgroup of $G$ of order 15. Since its order equals $|G|$, we have:
+\item
+(a)  By Sylow’s theorems, the number \(n_{5}\) of 5-Sylow subgroups satisfies  
+\(n_{5}\equiv 1 \pmod 5\) and \(n_{5}\mid |G|/5=15/5=3\), so \(n_{5}=1\).  
+A unique Sylow subgroup is normal, hence \(G\) has a normal subgroup of order \(5\).
+
+\smallskip
+(b)  Let \(P_{3}\) and \(P_{5}\) be the Sylow 3- and 5-subgroups of \(G\) (orders \(3\) and \(5\)).  
+Because \(|P_{3}||P_{5}|=15=|G|\) and \(\gcd(3,5)=1\) we have \(P_{3}\cap P_{5}=\{e\}\).  
+Part (a) gives \(P_{5}\trianglelefteq G\), and groups of prime order are cyclic, so
 \[
-G = P_3 P_5 \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/15,
+G=P_{3}P_{5}\cong P_{3}\times P_{5}\cong\mathbb Z_{3}\times\mathbb Z_{5}\cong\mathbb Z_{15},
 \]
-so $G$ is cyclic.
+hence \(G\) is cyclic.
 
-\item Again by Sylow's theorems, the number $n_p$ of $p$-Sylow subgroups satisfies $n_p \equiv 1 \mod p$ and divides $q$, so $n_p = 1$ or $q$. 
-Similarly, $n_q \equiv 1 \mod q$ and divides $p$, so $n_q = 1$ or $p$. 
-Suppose for contradiction that $n_q = p$. Then:
+\item
+Again by Sylow’s theorems, \(n_{p}\equiv 1\pmod p\) and \(n_{p}\mid q\), so \(n_{p}=1\) or \(q\).  
+Likewise \(n_{q}\equiv 1\pmod q\) and \(n_{q}\mid p\), so \(n_{q}=1\) or \(p\).  
+If \(n_{q}=p\) then \(p\equiv 1\pmod q\), contradicting the hypothesis \(p\not\equiv 1\pmod q\); hence \(n_{q}=1\) and the \(q\)-Sylow subgroup \(Q\) is normal.
+
+Both Sylow subgroups \(P,Q\) are cyclic of prime order, \(P\cap Q=\{e\}\) and \(|P||Q|=pq=|G|\), so
 \[
-p \equiv 1 \mod q \Rightarrow p \equiv 1 \pmod{q},
+G\cong P\times Q\cong\mathbb Z_{p}\times\mathbb Z_{q}\cong\mathbb Z_{pq},
 \]
-which contradicts the assumption $p \not\equiv 1 \pmod{q}$. Therefore, $n_q = 1$, and the $q$-Sylow subgroup is unique and hence normal.
+and \(G\) is cyclic.
 
-All groups of prime order are cyclic, so both the $p$-Sylow and $q$-Sylow subgroups are cyclic. 
-Let $P$ and $Q$ denote the $p$- and $q$-Sylow subgroups, with $Q \trianglelefteq G$ and $P \cap Q = \{e\}$. Since $|P||Q| = pq = |G|$ and $Q$ is normal, we have:
-\[
-G \cong P \times Q \cong \mathbb{Z}/p \times \mathbb{Z}/q \cong \mathbb{Z}/pq,
-\]
-because $p$ and $q$ are relatively prime. Hence, $G$ is cyclic.
+\item
+(a)  For \(|G|=12=2^{2}\!\cdot 3\).  
+Sylow gives \(n_{3}\equiv 1\pmod 3,\; n_{3}\mid 4\Rightarrow n_{3}=1\text{ or }4\);  
+\(n_{2}\equiv 1\pmod 2,\; n_{2}\mid 3\Rightarrow n_{2}=1\text{ or }3\).
 
-\item (a) Once again by Sylow's theorems, the number $n_3$ of $3$-Sylow subgroups satisfies $n_3 \equiv 1 \mod 3$ and divides $4$. Thus, $n_3 = 1$ or $4$.
-The number $n_2$ of $2$-Sylow subgroups satisfies $n_2 \equiv 1 \mod 2$ and divides $3$. So $n_2 = 1$ or $3$.
-If either $n_3 = 1$ or $n_2 = 1$, the corresponding Sylow subgroup is unique and hence normal. If both were non-unique (i.e., $n_3 = 4$ and $n_2 = 3$), then $G$ would contain more than 12 elements, which is impossible. Hence, at least one of the Sylow subgroups is normal and
-therefore, $G$ always has a normal subgroup.
+If \(n_{3}=1\) \emph{or} \(n_{2}=1\) we already have a normal Sylow subgroup.  
+Assume instead \(n_{3}=4\) and \(n_{2}=3\).  
+Each 3-Sylow subgroup contributes \(2\) non-identity elements, so \(4\) of them give \(8\) such elements.  
+Each 2-Sylow subgroup (of order 4) contributes \(3\) non-identity elements; \(3\) of them would add \(9\) more, totalling \(17>12\), impossible.  
+Therefore at least one Sylow subgroup is unique and normal, so \(G\) always has a normal subgroup.
 
-(b) A non-cyclic group of order 12 is the alternating group $A_4$, the group of even permutations on 4 elements. It has order 12 but is not cyclic. A cyclic group of order 12 must have an element of order 12. However, in $A_4$, all elements have order 1, 2, or 3. Therefore, $A_4$ cannot be cyclic.
+\smallskip
+(b)  A non-cyclic group of order 12 is the alternating group \(A_{4}\).  
+A cyclic group of order 12 would contain an element of order 12, but in \(A_{4}\) every element has order \(1,2,\) or \(3\); hence \(A_{4}\) is not cyclic.
+
 \end{enumerate}
 \section*{Problem 4}
 First, note that both \( a \) and \( b \) are products of two disjoint 4-cycles. Therefore,
