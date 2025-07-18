@@ -93,10 +93,10 @@ N_H(f(P)) = H \Rightarrow f(N_G(P)) = H.
 \item (a) By Sylow's theorems, the number $n_5$ of $5$-Sylow subgroups satisfies $n_5 \equiv 1 \mod 5$ and $n_5 \mid \frac{|G|}{p^k} = \frac{15}{5} = 3$, so $n_5 = 1$. 
 A unique Sylow subgroup is always normal, so $G$ has a normal subgroup of order $5$.
 
-(b) Let $P_3$ and $P_5$ be the Sylow 3- and 5-subgroups of $G$, with $|P_3| = 3$ and $|P_5| = 5$.
-Since $|P_3|$ and $|P_5|$ are relatively prime and both subgroups are cyclic, as all groups of prime order are, and $P_5$ is normal, it follows that:
+(b) Let $P_3$ and $P_5$ be the Sylow 3- and 5-subgroups of $G$, with $|P_3| = 3$ and $|P_5| = 5$. Since $|P_3| = 3$ and $|P_5| = 5$ are relatively prime, and $|P_3||P_5| = 15 = |G|$, it follows that $P_3 \cap P_5 = \{e\}$. Moreover, $P_5$ is normal in $G$ by part (a), and both $P_3$ and $P_5$ are cyclic because all groups of prime order are cyclic.
+Therefore, the internal direct product $P_3 P_5$ is a subgroup of $G$ of order 15. Since its order equals $|G|$, we have:
 \[
-G \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/15,
+G = P_3 P_5 \cong P_3 \times P_5 \cong \mathbb{Z}/3 \times \mathbb{Z}/5 \cong \mathbb{Z}/15,
 \]
 so $G$ is cyclic.
 
