@@ -60,12 +60,31 @@
     \item
     \textit{Note: The problem appears to contain a typo, We interpret \( H = \mathbb{Z} \cdot i + \mathbb{Z} \cdot j +  \mathbb{Z} \cdot k + \mathbb{Z} \cdot w \).}
 
-    \( H \subset \mathbb{H} \), and we verify that \( H \) is a subring. First, \( 0 = 0 \cdot 1 \in H \), and \( 1 \in H \) by definition. 
-    Since the sum or difference of two integer combinations of \( 1, i, j, k, w \) is again such a combination, \( H \) is closed under addition and additive inverses.
+    Since each generator lies in \( \mathbb{H} \), we have \( H \subset \mathbb{H} \). The set \( H \) is closed under addition and subtraction because it is a \( \mathbb{Z} \)-module. Moreover,
+    \[
+    1 = 2w - (i + j + k) \in H,
+    \]
+    so \( H \) contains the identity and hence also \( 0 \).
 
-    For closure under multiplication, we note that \( 1, i, j, k \in \mathbb{H} \) and their products lie in the \( \mathbb{Z} \)-span of \( 1, i, j, k \). Also, since \( w = \frac{1}{2}(1 + i + j + k) \), and \( \mathbb{H} \) is closed under multiplication, products like \( w^2 \), \( iw \), \( jw \), and \( kw \) are all in the \( \mathbb{Z} \)-span of \( 1, i, j, k, w \), so they lie in \( H \). Thus, \( H \) is closed under multiplication.
+    To verify closure under multiplication, note that the products of \( i, j, k \) lie in the \( \mathbb{Z} \)-span of \( i, j, k \), and known identities in the Hurwitz quaternions show that products involving \( w \), such as \( w^2 \), \( iw \), \( jw \), and \( kw \), also lie in the \( \mathbb{Z} \)-span of \( i, j, k, w \). This can be verified by direct computation.
 
-    Therefore, \( H \) is a subring of \( \mathbb{H} \). As \( \mathbb{H} \) has no zero-divisors and \( H \subset \mathbb{H} \), it follows that \( H \) has no zero-divisors.
+    Therefore, \( H \) is a subring of \( \mathbb{H} \). Since \( \mathbb{H} \) has no zero-divisors and \( H \subset \mathbb{H} \), it follows that \( H \) also has no zero-divisors.
+    
+    \item
+    Fix \( a, b \in H \), with \( b \ne 0 \). We aim to show that there exist \( q, r \in H \) such that
+    \[
+    a = qb + r \quad \text{with } r = 0 \text{ or } N(r) < N(b),
+    \]
+    and similarly on the right: \( a = bq + r \) with the same condition on \( r \).
+
+    Since \( \mathbb{H} \) is a division ring, we can write \( a = q'b + r' \) for some \( q' \in \mathbb{H} \), where \( r' \in \mathbb{H} \). Let \( q \in H \) be the Hurwitz quaternion closest to \( q' \) in the standard Euclidean norm on \( \mathbb{R}^4 \). Define
+    \[
+    r := a - qb \in \mathbb{H}.
+    \]
+    Then \( N(r) = \|a - qb\|^2 \) is minimized by construction, and since \( H \) is closed under subtraction, \( r \in H \). Moreover, unless \( q = q' \), we have \( N(r) < N(b) \) because the minimal distance approximation ensures the remainder is strictly shorter than \( b \) in norm.
+
+    The same argument applies for right division by expressing \( a = bq' \), choosing the nearest \( q \in H \), and setting \( r := a - bq \). Thus, \( H \) is both left and right Euclidean with respect to the norm \( N \).
+
 \end{enumerate}
 
 
