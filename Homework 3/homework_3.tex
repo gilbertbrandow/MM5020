@@ -40,7 +40,22 @@
     N(x) = 0 \iff a = b = c = d = 0 \iff x = 0.
     \]
     Thus, \( N(x) = 0 \) if and only if \( x = 0 \).
+    \item
+    Let \( x \in \mathbb{H} \) be nonzero. From previous section, we have \(N(x) = x\bar{x} = a^2 + b^2 + c^2 + d^2 > 0.\)
+    Define the inverse of \( x \) by
+    \[
+    x^{-1} := \frac{\bar{x}}{N(x)}.
+    \]
+    Then:
+    \[
+    x x^{-1} = x \cdot \frac{\bar{x}}{N(x)} = \frac{x\bar{x}}{N(x)} = \frac{N(x)}{N(x)} = 1,
+    \quad
+    x^{-1} x = \frac{\bar{x}}{N(x)} \cdot x = \frac{\bar{x}x}{N(x)} = \frac{N(x)}{N(x)} = 1.
+    \]
+    Hence, every nonzero element of \( \mathbb{H} \) is invertible.
 
+    Suppose \( x, y \in \mathbb{H} \) with \( x \ne 0 \) and \( xy = 0 \). Then, \(x^{-1}(xy) = (x^{-1}x)y = 1 \cdot y = y = 0.\)
+    Thus, \( y = 0 \), and similarly one shows that \( x = 0 \) if \( y \ne 0 \) and \( xy = 0 \). Therefore, \( \mathbb{H} \) has no zero-divisors, and every nonzero element is invertible. 
 \end{enumerate}
 
 
