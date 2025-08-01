@@ -219,4 +219,31 @@ Let \( A \) be a UFD. By previous section, the product of two primitive polynomi
 Since \( A \) is a UFD and its field of fractions \( \text{Frac}(A) \) makes \( \text{Frac}(A)[X] \) a UFD, it follows that \( A[X] \) is also a UFD.
 \end{enumerate}
 
+\section*{Problem 6}
+Since \( h(X) \in I \) has constant term 1, write \( h(X) = 1 + Xf(X) \) for some \( f(X) \in \mathbb{Z}[X] \), so
+\[
+1 + Xf(X) \in I.
+\]
+
+Let this element be denoted \( u(X) := 1 + Xf(X) \in I \). We will show that for any \( r \in \mathbb{N} \), the polynomial
+\[
+S_r := 1 + X + \cdots + X^r
+\]
+can be expressed as:
+\[
+S_r = u(X) a_r(X) + X^{r+1} b_r(X),
+\]
+for some \( a_r(X), b_r(X) \in \mathbb{Z}[X] \). This can be verified by induction or direct algebra: \( u(X) \) is invertible mod \( X^{r+1} \), and \( S_r \equiv u(X) a_r(X) \mod X^{r+1} \).
+
+Now, since \( u(X) \in I \), it suffices to show that \( X^{r+1} b_r(X) \in I \) for some \( r \). To achieve this, consider that \( I \) contains no common nonconstant divisor, so in particular, there exists an integer \( \delta \in I \setminus \{0\} \), with \( \delta \in \mathbb{Z} \), since all constant terms lie in \( \mathbb{Z} \).
+
+Choose \( s > r \) such that \( b_s(X) - b_r(X) \in (\delta) \subset I \). Then:
+\[
+S_s - S_r = X^{r+1} (b_s(X) - b_r(X)) \in I,
+\]
+so \( S_s \in I \Rightarrow 1 + X + \cdots + X^s \in I \).
+
+Thus, for some \( r \in \mathbb{N} \), the polynomial \( 1 + X + \cdots + X^r \in I \), as required.
+
+
 \end{document}
