@@ -178,6 +178,19 @@ In a Boolean ring, every element satisfies \( x^2 = x \), so \( x(x - 1) = 0 \).
 
 It follows that \( \mathfrak{p} \) is maximal, since the quotient \( A/\mathfrak{p} \) is a field.
 
+\item
+Let \( I = (x_1, x_2, \dots, x_n) \) be a finitely generated ideal in \( A \). Define:
+\[
+e := x_1 + x_2 + \dots + x_n.
+\]
+
+Since \( A \) is Boolean, \( e^2 = e \), so \( e \in A \). We claim that \( I = (e) \).
+
+First, each \( x_i \in I \), and since \( x_i^2 = x_i \), we have \( x_i = x_i e \in (e) \), so \( x_1, \dots, x_n \in (e) \), hence \( I \subseteq (e) \).
+
+Conversely, \( e = x_1 + \dots + x_n \in I \), so any multiple \( ae \in I \), and thus \( (e) \subseteq I \). Therefore, \( I = (e) \), and the ideal is principal.
+
+
 \end{enumerate}
 
 
