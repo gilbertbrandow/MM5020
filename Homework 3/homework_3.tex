@@ -133,6 +133,25 @@ On the other hand, \( \alpha = \sqrt{2} + \sqrt{3} \in \mathbb{Q}(\sqrt{2}, \sqr
 
 \end{enumerate}
 
+\section*{Problem 3}
+The polynomial \( X^2 + 1 \) is irreducible over \( \mathbb{F}_3 \), so the quotient ring \( K = \mathbb{F}_3[X]/(X^2 + 1) \) is a field with \( 3^2 = 9 \) elements. Each element of \( K \) has a unique representative of the form \( a + bX \), with \( a, b \in \mathbb{F}_3 \). Since \( X^2 \equiv -1 \equiv 2 \) in \( \mathbb{F}_3 \), it follows that \( X^2 = 2 \) in \( K \).
+
+The multiplicative group \( K^* = K \setminus \{0\} \) has order 8 and is cyclic. To identify a generator, consider the element \( X + 1 \in K \). The successive powers of \( X + 1 \) modulo \( X^2 + 1 \) are computed as follows, using the relation \( X^2 = 2 \):
+
+\[
+\begin{aligned}
+(X + 1)^1 &= X + 1 \\
+(X + 1)^2 &= X^2 + 2X + 1 = 2 + 2X + 1 = 2X + 3 \equiv 2X \\
+(X + 1)^3 &= 2X(X + 1) = 2X^2 + 2X = 4 + 2X \equiv 1 + 2X \\
+(X + 1)^4 &= (1 + 2X)(X + 1) = X + 1 + 2X^2 + 2X = X + 1 + 4 + 2X = 3X + 5 \equiv 2 \\
+(X + 1)^5 &= 2(X + 1) = 2X + 2 \\
+(X + 1)^6 &= (2X + 2)(X + 1) = 2X^2 + 2X + 2X + 2 = 4 + 4X \equiv 1 + X \\
+(X + 1)^7 &= (1 + X)(X + 1) = X + 1 + X^2 + X = X + 1 + 2 + X = 2X + 3 \equiv 2X \\
+(X + 1)^8 &= ((X + 1)^4)^2 = 2^2 = 4 \equiv 1
+\end{aligned}
+\]
+
+The element \( X + 1 \) satisfies \( (X + 1)^8 = 1 \), and no smaller positive power yields 1. Therefore, \( X + 1 \) has order 8 in \( K^* \), and is a generator.
 
 
 \end{document}
