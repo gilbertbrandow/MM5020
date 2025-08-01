@@ -87,7 +87,7 @@
 
 \end{enumerate}
 
-\section*{Problem 2.1}
+\section*{Problem 2}
 \begin{enumerate}[label=(\arabic*)]
 
 \item We factor the polynomial:
@@ -106,6 +106,29 @@ We compute the degree using the tower law:
 &[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}(\sqrt{2})] \cdot
 [\mathbb{Q}(\sqrt{2}) : \mathbb{Q}] = \\ &2 \cdot 2 = 4.
 \end{aligned}
+\]
+
+\item
+Let \( \alpha = \sqrt{2} + \sqrt{3} \). Then
+\[
+\alpha^2 = (\sqrt{2} + \sqrt{3})^2 = 5 + 2\sqrt{6},
+\]
+so
+\[
+\sqrt{6} = \frac{\alpha^2 - 5}{2} \in \mathbb{Q}(\alpha).
+\]
+Using \( \sqrt{6} = \sqrt{2} \cdot \sqrt{3} \), we can write
+\[
+\sqrt{2} = \frac{\sqrt{6}}{\sqrt{3}}, \quad \text{and} \quad \sqrt{3} = \alpha - \sqrt{2}.
+\]
+Thus \( \sqrt{2}, \sqrt{3} \in \mathbb{Q}(\alpha) \), so
+\[
+\mathbb{Q}(\sqrt{2}, \sqrt{3}) \subseteq \mathbb{Q}(\alpha).
+\]
+
+On the other hand, \( \alpha = \sqrt{2} + \sqrt{3} \in \mathbb{Q}(\sqrt{2}, \sqrt{3}) \) (since the field contains both \( \sqrt{2} \) and \( \sqrt{3} \), and is closed under addition), so the reverse inclusion holds. Therefore,
+\[
+\mathbb{Q}(\sqrt{2} + \sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3}).
 \]
 
 \end{enumerate}
