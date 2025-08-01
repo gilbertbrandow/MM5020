@@ -154,7 +154,7 @@ The multiplicative group \( K^* = K \setminus \{0\} \) has order 8 and is cyclic
 The element \( X + 1 \) satisfies \( (X + 1)^8 = 1 \), and no smaller positive power yields 1. Therefore, \( X + 1 \) has order 8 in \( K^* \), and is a generator.
 
 
-\section*{Problem }
+\section*{Problem 4}
 \begin{enumerate}[label=(\arabic*)]
 \item
 For all \( x \in A \),
@@ -202,5 +202,16 @@ This ideal is not principal, as no single subset can generate all singleton sets
 
 \end{enumerate}
 
+\section*{Problem 5}
+\begin{enumerate}[label=(\arabic*)]
+    \item
+Let \( A \) be a UFD and let \( S, T \in A[X] \) be primitive polynomials. Suppose for contradiction that \( ST \) is not primitive. Then there exists an irreducible element \( p \in A \) such that \( p \) divides every coefficient of \( ST \).
+
+Consider the canonical ring homomorphism \( \varphi: A \to A/(p) \), and extend it to \( \varphi: A[X] \to (A/(p))[X] \) by applying it to each coefficient. Since \( p \) is irreducible in a UFD, it generates a prime ideal, so \( A/(p) \) is an integral domain, and thus \( (A/(p))[X] \) is also an integral domain.
+
+Then \( \varphi(ST) = \varphi(S)\varphi(T) = 0 \) in \( (A/(p))[X] \). But since \( S \) and \( T \) are primitive, not all their coefficients are divisible by \( p \), so \( \varphi(S) \ne 0 \) and \( \varphi(T) \ne 0 \). This contradicts the fact that the product of two nonzero elements in a domain cannot be zero.
+
+Therefore, \( ST \) must be primitive.
+\end{enumerate}
 
 \end{document}
