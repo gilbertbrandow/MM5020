@@ -36,7 +36,7 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 - §4.1–4.4
 
 **Recommended exercises:**
-- §4.1: 2, 4, 9, 10 
+- §4.1: 2(REVISIT), 4, 9, 10 
 - §4.2: 2 
 - §4.3: 3, 6, 17, 19–21, 26, 27, 30
 
