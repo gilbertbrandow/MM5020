@@ -26,7 +26,8 @@ Refresh group definitions and key examples (cyclic, permutation, dihedral, matri
 - §3.2: 6, 8, 11 (REVISIT)
 
 **Past exam practice:** 
-- **2024 Oct 15** — 1(a), 1(b) (REVISIT) Bijection between left cosets and right cosets
+- **20241015** — 1(a), 1(b) (REVISIT) Bijection between left cosets and right cosets
+- **20240315** — 1(a)(REVISIT), 1(b), 1(c)(REVISIT)
 ---
 
 ## Topic 2 (Sept 10 – Sept 17): Group actions
@@ -34,14 +35,16 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 
 **Reading:** 
 - §4.1–4.4
+- §4.4 (REVISIT, Automorphisms)
 
 **Recommended exercises:**
 - §4.1: 2(REVISIT), 4, 9, 10 
 - §4.2: 2 
-- §4.3: 3, 6, 17, 19–21, 26, 27, 30
+- §4.3: 3, 6, 17, 19–21, 26, 27 (REVISIT), 30 (REVISIT)
 
 **Past exam practice:**  
-*(to be filled in)*
+- **20240417** — 3(a), 3(b) (REVISIT)
+- **20250315** — 2(a), 2(b)
 
 ---
 
