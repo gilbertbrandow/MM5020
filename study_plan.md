@@ -51,14 +51,14 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 ## Topic 3 (Sept 17 – Sept 21): Sylow theorems & finite abelian groups
 **Reading:** 
 - §4.5–4.6
-- §5.2
+- §5.2 (REVISIT)
 
 **Recommended exercises:**  
 - §4.5: 4, 9, 10(REVISIT), 16, 37 (REVISIT d)
-- §5.2: 1, 4, 7, 8, 9
+- §5.2: 1, 4 (REVISIT), 7(REVISIT), 8(REVISIT), 9(REVISIT)
 
 **Past exam practice:**  
-- **20241015** — 3(a), 3(b) (REVISIT)
+- **20241015** — 2(a) (REVISIT), 2(b), 3(a), 3(b) (REVISIT)
 
 ---
 
