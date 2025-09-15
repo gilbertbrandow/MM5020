@@ -16,13 +16,13 @@ Refresh group definitions and key examples (cyclic, permutation, dihedral, matri
 - §1.1: 6, 9  
 - §1.2: 9, 10  
 - §1.3: 1, 11, 12  
-- §1.6: 3, 4, 6, 14 (very important!), 18  
+- §1.6: 3, 4, 6, 14 (REVISIT), 18  
 - §1.7: 1, 4, 10, 15  
 - §2.1: 1, 2, 6  
 - §2.2: 5, 10  
 - §2.3: 9, 11, 25  
 - §2.4: 6, 14, 16  
-- §3.1: 1, 6, 7, 24, 30, 43 (highly recommended)  
+- §3.1: 1, 6, 7, 24, 30, 43 (REVISIT)  
 - §3.2: 6, 8, 11 (REVISIT)
 
 **Past exam practice:** 
@@ -54,11 +54,11 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 - §5.2
 
 **Recommended exercises:**  
-- §4.5: 4, 9, 10, 16, 37 
+- §4.5: 4, 9, 10(REVISIT), 16, 37 (REVISIT d)
 - §5.2: 1, 4, 7, 8, 9
 
 **Past exam practice:**  
-*(to be filled in)*
+- **20241015** — 3(a), 3(b) (REVISIT)
 
 ---
 
