@@ -71,8 +71,8 @@ Ideals; ring homomorphisms; quotients; CRT; polynomial rings.
 Write down complete Defintion of a ring with axioms with definitions for commutative, have an identity, division ring, field etc.
 
 **Recommended exercises:**  
-- §7.1: 5, 6, 7, 9, 15(REVISIT), 21 (REVISIT) 
-- §7.2: 2, 5, 7 
+- §7.1: 5, 6, 7, 9, 15(REVISIT), 21(REVISIT) 
+- §7.2: 2, 5(b, Discrete valuation & valuation ring), 7(REVISIT) 
 - §7.3: 1, 2, 15, 16, 24, 26, 28, 33, 34 
 - §7.4: 9, 11, 14, 15, 19, 20, 30, 31, 32, 33
 
@@ -84,7 +84,7 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 ## Topic 5 (Sept 24 – Sept 27): PIDs, UFDs, polynomials
 Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 
-**Reading:** Chapter 8; §§9.1–9.3
+**Reading:** Chapter 8; §9.1–9.3
 
 **Recommended exercises:**  
 - §8.1: 7, 10, 11 
