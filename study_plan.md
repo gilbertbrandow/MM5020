@@ -67,8 +67,11 @@ Ideals; ring homomorphisms; quotients; CRT; polynomial rings.
 
 **Reading:** Chapter 7
 
+**TO WRITE:**
+Write down complete Defintion of a ring with axioms with definitions for commutative, have an identity, division ring, field etc.
+
 **Recommended exercises:**  
-- §7.1: 5, 6, 7, 9, 15, 21 
+- §7.1: 5, 6, 7, 9, 15(REVISIT), 21 (REVISIT) 
 - §7.2: 2, 5, 7 
 - §7.3: 1, 2, 15, 16, 24, 26, 28, 33, 34 
 - §7.4: 9, 11, 14, 15, 19, 20, 30, 31, 32, 33
