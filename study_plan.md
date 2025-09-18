@@ -73,7 +73,7 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 **Recommended exercises:**  
 - §7.1: 5, 6, 7, 9, 15(REVISIT), 21(REVISIT) 
 - §7.2: 2, 5(b, Discrete valuation & valuation ring), 7(REVISIT) 
-- §7.3: 1, 2, 15, 16, 24, 26, 28, 33, 34 
+- §7.3: 1, 2, 15, 16, 24, 26 (REVISIT a & c), 28, 33, 34 
 - §7.4: 9, 11, 14, 15, 19, 20, 30, 31, 32, 33
 
 **Past exam practice:**  
