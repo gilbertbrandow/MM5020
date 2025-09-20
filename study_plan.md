@@ -33,6 +33,7 @@ Refresh group definitions and key examples (cyclic, permutation, dihedral, matri
 
 - **20241015** — 1(a), 1(b) (REVISIT) Bijection between left cosets and right cosets
 - **20240315** — 1(a)(REVISIT), 1(b), 1(c)(REVISIT)
+- **20230423** — 1a, 1b
 
 ---
 
@@ -55,6 +56,7 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 
 - **20240417** — 3(a), 3(b) (REVISIT)
 - **20250315** — 2(a), 2(b)
+- **20230423** — 2(a-d)
 
 ---
 
@@ -89,11 +91,12 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 
 - §7.1: 5, 6, 7, 9, 15(REVISIT), 21(REVISIT)
 - §7.2: 2, 5(b, Discrete valuation & valuation ring), 7(REVISIT)
-- §7.3: 1, 2, 15, 16, 24, 26 (REVISIT a & c), 28, 33, 34
-- §7.4: 9, 11, 14, 15, 19, 20, 30, 31, 32, 33
+- §7.3: 1, 2, 15, 16, 24, 26(REVISIT a & c), 28, 33(REVISIT), 34(REVISIT d)
+- §7.4: 9, 11 (REVISIT), 14, 15, 19, 20, 30(REVISIT), 31, 32, 33(REVISIT a, d)
 
 **Past exam practice:**  
-*(to be filled in)*
+
+- **20230423** — 5a (REVISIT), 5b, 5c
 
 ---
 
@@ -108,7 +111,7 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 - §8.1: 7, 10, 11
 - §8.2: 1, 2, 3, 8
 - §8.3: 1, 5, 6, 7, 8
-- §9.2: 1–5
+- §9.2: 1, 2, 3, 4, 5
 
 **Past exam practice:**  
 *(to be filled in)*
@@ -119,10 +122,15 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 
 Field extensions; algebraic elements; simple extensions.
 
-**Reading:** §§13.1–13.2
+**Reading:**
+
+- 13.1
+- 13.2
 
 **Recommended exercises:**  
-All in §13.1; §13.2: 2, 4, 8, 9, 16
+
+- §13.1: All
+- §13.2: 2, 4, 8, 9, 16
 
 **Past exam practice:**  
 *(to be filled in)*
