@@ -104,13 +104,20 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 
 Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 
-**Reading:** Chapter 8; §9.1–9.3
+**Reading:** Chapter
+
+- §8.1
+- §8.2
+- §8.3 (REVISIT)
+- §9.1
+- §9.2
+- §9.3
 
 **Recommended exercises:**  
 
-- §8.1: 7, 10, 11
-- §8.2: 1, 2, 3, 8
-- §8.3: 1, 5, 6, 7, 8
+- §8.1: 7, 10, 11(REVISIT) ("unique up to a unit" (?))
+- §8.2: 1(REVISIT), 2, 3(REVISIT), 8(REVISIT)
+- §8.3: 1 (REVISIT c), 5, 6, 7, 8
 - §9.2: 1, 2, 3, 4, 5
 
 **Past exam practice:**  
