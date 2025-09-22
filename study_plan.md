@@ -97,6 +97,7 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 **Past exam practice:**  
 
 - **20230423** — 5a (REVISIT), 5b, 5c
+- **20240813** — 5 (REVISIT)
 
 ---
 
@@ -117,7 +118,7 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 
 - §8.1: 7, 10, 11(REVISIT) ("unique up to a unit" (?))
 - §8.2: 1(REVISIT), 2, 3(REVISIT), 8(REVISIT)
-- §8.3: 1 (REVISIT c), 5, 6, 7, 8
+- §8.3: 1 (REVISIT c), 5 (REVISIT), 6 (REVISIT a), 7, 8
 - §9.2: 1, 2, 3, 4, 5
 
 **Past exam practice:**  
