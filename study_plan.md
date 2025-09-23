@@ -118,11 +118,12 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 
 - §8.1: 7, 10, 11(REVISIT) ("unique up to a unit" (?))
 - §8.2: 1(REVISIT), 2, 3(REVISIT), 8(REVISIT)
-- §8.3: 1 (REVISIT c), 5 (REVISIT), 6 (REVISIT a), 7, 8
-- §9.2: 1, 2, 3, 4, 5
+- §8.3: 1 (REVISIT c), 5 (REVISIT), 6 (REVISIT a, c), 7 (REVISIT b), 8 (NOT FINISHED)
+- §9.2: 1, 2, 3(REVISIT), 4(NOT FINISHED), 5(NOT FINISHED)
 
 **Past exam practice:**  
-*(to be filled in)*
+
+- **240813** — 5 (REVISIT)
 
 ---
 
