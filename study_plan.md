@@ -138,15 +138,16 @@ Field extensions; algebraic elements; simple extensions.
 
 **Recommended exercises:**  
 
-- §13.1: All
-- §13.2: 2, 4, 8, 9, 16
+- §13.1: All (Did not complete 2-8)
+- §13.2: 2, 4, 8(REVISIT), 9(REVISIT), 16(REVISIT)
 
 **Past exam practice:**  
-*(to be filled in)*
+
+- **241015** — 6(REVISIT)
 
 ---
 
-## Exam preparations (Sept 30 – Oct 6)
+## Exam preparations (Sept 25 – Oct 6)
 
-- Full timed runs of past exams; review and redo weak problems.  
-- Suggested full papers: 2023 Apr, 2024 Aug, 2024 Oct, 2025 Mar.
+- Start working on a cheat-sheet with all important definitions & theorems
+- Saturday September 27th do MM5020 250315 completely
