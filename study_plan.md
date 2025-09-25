@@ -98,6 +98,7 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 
 - **20230423** — 5a (REVISIT), 5b, 5c
 - **20240813** — 5 (REVISIT)
+- **240417** — 5a, 5b (REVISIT), 5c (REVISIT)
 
 ---
 
@@ -124,6 +125,7 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 **Past exam practice:**  
 
 - **240813** — 5 (REVISIT)
+- **241015** — 5 (REVISIT)
 
 ---
 
@@ -144,10 +146,14 @@ Field extensions; algebraic elements; simple extensions.
 **Past exam practice:**  
 
 - **241015** — 6(REVISIT)
+- **240417** — 6a, 6b(REVISIT)
+
 
 ---
 
 ## Exam preparations (Sept 25 – Oct 6)
 
+- Read of characteristics and automorphisms
+- Read of basis of algebraic field extensions
 - Start working on a cheat-sheet with all important definitions & theorems
 - Saturday September 27th do MM5020 250315 completely
