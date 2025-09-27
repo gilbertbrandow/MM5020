@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+\title{Abstract Algebra - Stockholm University 2025}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Groups}
+\subsection{Conjugation, centralizer, center, normalizer}
+For $g\in G$, the conjugation map $c_g(x)=gxg^{-1}$ is an automorphism of $G$ (an \emph{inner} automorphism).
+For a subset $S\subseteq G$, the centralizer is
+\[
+C_G(S)=\{\,g\in G:\ gs=sg\ \text{ for all }s\in S\,\};\quad C_G(g):=C_G(\{g\}).
+\]
+The center is 
+\[ 
+    Z(G)=C_G(G)=\{g\in G:\ gx=xg\ \forall x\in G\}
+\]
+(always a characteristic, hence normal, subgroup).
+For a subgroup $H\le G$, the normalizer is
+\[
+N_G(H)=\{\,g\in G:\ gHg^{-1}=H\,\},
+\]
+the largest subgroup of $G$ in which $H$ is normal (so $H\trianglelefteq N_G(H)$). One always has $C_G(H)\le N_G(H)$.
+The number of conjugates of $H$ in $G$ equals $[G:N_G(H)]$.
+
+\subsection{Normal subgroups and quotients}
+A subgroup $N\le G$ is \textbf{normal} (write $N\trianglelefteq G$) if $gNg^{-1}=N$ for all $g\in G$.
+Equivalently, every left coset equals the corresponding right coset: $gN=Ng$.
+If $N\trianglelefteq G$, the set of cosets $G/N=\{gN:g\in G\}$ is a group with $(gN)(hN)=(gh)N$.
+
+
+\subsection{Isomorphism theorems}
+\begin{enumerate}[label=(\arabic*)]
+\item \textbf{First isomorphism theorem.} For $\varphi:G\to H$ a homomorphism,
+\[
+G/\ker\varphi \ \cong\ \mathrm{im}\,\varphi.
+\]
+\item \textbf{Second isomorphism theorem.} For $A\le G$ and $N\trianglelefteq G$,
+\[
+A\cap N\trianglelefteq A,\qquad AN\le G,\qquad AN/N\ \cong\ A/(A\cap N).
+\]
+\item \textbf{Third isomorphism theorem.} If $K\le H\trianglelefteq G$, then $H/K\trianglelefteq G/K$ and
+\[
+(G/K)/(H/K)\ \cong\ G/H.
+\]
+\item \textbf{Correspondence (lattice) theorem.} For $N\trianglelefteq G$, the map
+\[
+\{\,\text{subgroups }H\mid N\le H\le G\,\}\ \longleftrightarrow\ \{\,\text{subgroups of }G/N\,\},\quad
+H\mapsto H/N
+\]
+is a bijection preserving inclusion and index; it carries normal subgroups $H\trianglelefteq G$ with $N\le H$ to normal subgroups of $G/N$.
+\end{enumerate}
+
+\section{Group actions}
+\section{Sylows Theorem}
+\section{Rings}
+\section{Integral -, Unique Factorization - \& Principle Ideal Domains}
+\section{Field Extensions}
+
+\end{document}
