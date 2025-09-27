@@ -32,8 +32,9 @@ Refresh group definitions and key examples (cyclic, permutation, dihedral, matri
 **Past exam practice:**
 
 - **20241015** — 1(a), 1(b) (REVISIT) Bijection between left cosets and right cosets
-- **20240315** — 1(a)(REVISIT), 1(b), 1(c)(REVISIT)
+- **20240315** — 1a(REVISIT), 1b, 1c(REVISIT)
 - **20230423** — 1a, 1b
+- **20240417** — 1a(REVISIT), 1b(REVISIT)
 
 ---
 
@@ -54,7 +55,7 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 
 **Past exam practice:**  
 
-- **20240417** — 3(a), 3(b) (REVISIT)
+- **20240417** —  2a, 2b, 2c, 3a, 3b(REVISIT)
 - **20250315** — 2(a), 2(b)
 - **20230423** — 2(a-d)
 
@@ -75,6 +76,7 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 **Past exam practice:**  
 
 - **20241015** — 2(a) (REVISIT), 2(b), 3(a), 3(b) (REVISIT)
+- **20240417** — 4a, 4b
 
 ---
 
@@ -146,14 +148,13 @@ Field extensions; algebraic elements; simple extensions.
 **Past exam practice:**  
 
 - **241015** — 6(REVISIT)
-- **240417** — 6a, 6b(REVISIT)
-
+- **240417** — 6a, 6b(REVISIT), 6c
 
 ---
 
 ## Exam preparations (Sept 25 – Oct 6)
 
-- Read of characteristics and automorphisms
-- Read of basis of algebraic field extensions
+- Read of characteristics and automorphisms (DONE)
+- Read of basis of algebraic field extensions (DONE)
 - Start working on a cheat-sheet with all important definitions & theorems
-- Saturday September 27th do MM5020 250315 completely
+- Sunday September 28th do MM5020 250315 completely
