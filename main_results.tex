@@ -36,10 +36,29 @@ the largest subgroup of $G$ in which $H$ is normal (so $H\trianglelefteq N_G(H)$
 The number of conjugates of $H$ in $G$ equals $[G:N_G(H)]$.
 
 \subsection{Normal subgroups and quotients}
-A subgroup $N\le G$ is \textbf{normal} (write $N\trianglelefteq G$) if $gNg^{-1}=N$ for all $g\in G$.
+A subgroup $N\le G$ is normal (write $N\trianglelefteq G$) if $gNg^{-1}=N$ for all $g\in G$.
 Equivalently, every left coset equals the corresponding right coset: $gN=Ng$.
 If $N\trianglelefteq G$, the set of cosets $G/N=\{gN:g\in G\}$ is a group with $(gN)(hN)=(gh)N$.
 
+\subsection{Lagrange's Theorem}
+If $G$ is finite and $H\le G$, then
+\[
+|G| \;=\; [G\!:\!H]\cdot |H|.
+\]
+\emph{Proof sketch.} $G$ is the disjoint union of $[G\!:\!H]$ left cosets, each of cardinality $|H|$.
+
+\paragraph{Consequences}
+\begin{itemize}[leftmargin=1.2em]
+  \item $|H|\mid |G|$ for every $H\le G$.
+  \item For $g\in G$, the order $|g|$ divides $|G|$; hence $g^{\,|G|}=e$.
+  \item Index multiplicativity: for $K\le H\le G$ (with $G$ finite),
+        \([G\!:\!K]=[G\!:\!H]\,[H\!:\!K]\).
+  \item If $[G\!:\!H]=2$, then $H\trianglelefteq G$ (there are only two cosets, so $gHg^{-1}$ must be $H$).
+\end{itemize}
+
+\paragraph{Groups of prime order are cyclic.}
+If $|G|=p$ (prime) and $g\in G$, $g\neq e$, then $|\langle g\rangle|=|g|\mid p$ by Lagrange,
+so $|g|=p$ and $\langle g\rangle=G$. Hence $G$ is cyclic and $G\cong \mathbb{Z}/p\mathbb{Z}$.
 
 \subsection{Isomorphism theorems}
 \begin{enumerate}[label=(\arabic*)]
