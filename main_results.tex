@@ -40,6 +40,14 @@ A subgroup $N\le G$ is normal (write $N\trianglelefteq G$) if $gNg^{-1}=N$ for a
 Equivalently, every left coset equals the corresponding right coset: $gN=Ng$.
 If $N\trianglelefteq G$, the set of cosets $G/N=\{gN:g\in G\}$ is a group with $(gN)(hN)=(gh)N$.
 
+\subsection{Cosets and index}
+For $H\le G$ and $g\in G$, the left (resp.\ right) coset is
+$gH=\{gh:h\in H\}$ (resp.\ $Hg=\{hg:h\in H\}$).
+Left cosets are either disjoint or equal and they partition $G$.
+Each left coset $gH$ has $|H|$ elements via the bijection $H\to gH$, $h\mapsto gh$.
+The \emph{index} of $H$ in $G$ is the number of left cosets, denoted $[G\!:\!H]$.
+
+
 \subsection{Lagrange's Theorem}
 If $G$ is finite and $H\le G$, then
 \[
