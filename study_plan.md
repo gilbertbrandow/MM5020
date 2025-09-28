@@ -157,5 +157,6 @@ Field extensions; algebraic elements; simple extensions.
 
 - Read of characteristics and automorphisms (DONE)
 - Read of basis of algebraic field extensions (DONE)
-- Start working on a cheat-sheet with all important definitions & theorems
+- Create a cheat-sheet with all important definitions & theorems
 - Sunday September 28th do MM5020 250315 completely (DONE)
+- Work through homework assignments
