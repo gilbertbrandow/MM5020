@@ -149,6 +149,7 @@ Field extensions; algebraic elements; simple extensions.
 
 - **241015** — 6(REVISIT)
 - **240417** — 6a, 6b(REVISIT), 6c
+- **20240813** — 6 (REVISIT)
 
 ---
 
@@ -157,4 +158,4 @@ Field extensions; algebraic elements; simple extensions.
 - Read of characteristics and automorphisms (DONE)
 - Read of basis of algebraic field extensions (DONE)
 - Start working on a cheat-sheet with all important definitions & theorems
-- Sunday September 28th do MM5020 250315 completely
+- Sunday September 28th do MM5020 250315 completely (DONE)
