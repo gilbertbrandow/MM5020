@@ -130,6 +130,23 @@ Two permutations in $S_n$ are conjugate if and only if they have the same cycle 
 \]
 Hence, the conjugacy classes of $S_n$ correspond bijectively to partitions of $n$.
 
+\subsection{Automorphisms of cyclic groups}
+For $n\ge1$, the automorphism group of the cyclic group $C_n\cong \mathbb Z/n\mathbb Z$ is
+\[
+\mathrm{Aut}(C_n)\ \cong\ (\mathbb Z/n\mathbb Z)^\times,
+\]
+hence $|\mathrm{Aut}(C_n)|=\varphi(n)$. Here $\varphi(n)$ is \emph{Euler's totient function}:
+\[
+\varphi(n)=\big|(\mathbb Z/n\mathbb Z)^\times\big|
+=\#\{\,1\le k\le n:\gcd(k,n)=1\,\}.
+\]
+Equivalently, if $n=\prod p_i^{\,e_i}$ then
+\[
+\varphi(n)=n\!\prod_{i}\!\Big(1-\frac1{p_i}\Big)
+=\prod_{i}\!\big(p_i^{e_i}-p_i^{e_i-1}\big).
+\]
+
+
 \section{Sylows Theorem}
 \section{Rings}
 \subsection{Chinese Remainder Theorem}
