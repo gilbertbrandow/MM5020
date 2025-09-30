@@ -47,7 +47,6 @@ Left cosets are either disjoint or equal and they partition $G$.
 Each left coset $gH$ has $|H|$ elements via the bijection $H\to gH$, $h\mapsto gh$.
 The \emph{index} of $H$ in $G$ is the number of left cosets, denoted $[G\!:\!H]$.
 
-
 \subsection{Lagrange's Theorem}
 If $G$ is finite and $H\le G$, then
 \[
@@ -91,9 +90,66 @@ is a bijection preserving inclusion and index; it carries normal subgroups $H\tr
 \end{enumerate}
 
 \section{Group actions}
+
+\subsection{Actions on cosets and by conjugation}
+\begin{itemize}[leftmargin=1.2em]
+  \item For $H\leq G$, the action $G\curvearrowright G/H$ by left multiplication is transitive, with stabilizer of $aH$ equal to $aHa^{-1}$. 
+  \item The action $G\curvearrowright G$ by conjugation, $g\cdot x=gxg^{-1}$, partitions $G$ into conjugacy classes. 
+        The stabilizer of $x$ is its centralizer $C_G(x)$, and $|\mathrm{Orb}(x)|=[G:C_G(x)]$.
+\end{itemize}
+
+\subsection{Cayley's Theorem}
+Every group $G$ is isomorphic to a subgroup $H$ of the symmetric group $S_{|G|}$:
+\[
+G \cong H \leq S_{|G|}.
+\]
+
+\subsection{Orbit--stabilizer}
+For any action $G\curvearrowright X$ and any $x\in X$ there is a canonical bijection
+\[
+G/G_x\ \xrightarrow{\ \sim\ }\ \mathrm{Orb}(x),\qquad gG_x\longmapsto g\cdot x.
+\]
+In particular, if $G$ is finite then
+\[
+|\mathrm{Orb}(x)|=[G:G_x]\quad\text{and}\quad |G|=|\mathrm{Orb}(x)|\cdot |G_x|.
+\]
+
+\subsection{Class Equation}
+For a finite group $G$, let $Z(G)$ be the center of $G$. Then
+\[
+|G| \;=\; |Z(G)| \;+\; \sum_{i=1}^r \,[G : C_G(g_i)],
+\]
+where $g_1, \dots, g_r$ are representatives of the conjugacy classes not contained in $Z(G)$.
+
+\subsection{Conjugacy in $S_n$}
+Two permutations in $S_n$ are conjugate if and only if they have the same cycle type
+(i.e.\ the same cycle lengths with the same multiplicities).
+\[
+\sigma, \tau \in S_n \quad\text{are conjugate} \;\;\Longleftrightarrow\;\;
+\text{cycle-type}(\sigma) = \text{cycle-type}(\tau).
+\]
+Hence, the conjugacy classes of $S_n$ correspond bijectively to partitions of $n$.
+
 \section{Sylows Theorem}
 \section{Rings}
+
 \section{Integral -, Unique Factorization - \& Principle Ideal Domains}
+\subsection{Gauss's Lemma}
+Let $R$ be a UFD with field of fractions $F$, and let $p(x)\in R[x]$. 
+If $p$ is reducible in $F[x]$, then $p$ is reducible in $R[x]$.
+(Equivalently: if $p$ is irreducible in $R[x]$, then it is irreducible in $F[x]$.)
+
+\subsection{Eisenstein’s Criterion}
+Let $R$ be an integral domain and $P\subset R$ a prime ideal. Consider
+\[
+f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0\in R[x].
+\]
+If $a_{n-1},\dots,a_0\in P$ and $a_0\notin P^2$, then $f(x)$ is irreducible in $R[x]$.
+
+\paragraph{Corollary ($\mathbb{Z}[x]$).}
+Let $f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_0\in\mathbb{Z}[x]$. 
+If there exists a prime $p$ such that $p\mid a_i$ for $i=0,\dots,n-1$ and $p^2\nmid a_0$, 
+then $f$ is irreducible in $\mathbb{Z}[x]$ (hence in $\mathbb{Q}[x]$ by Gauss).
 \section{Field Extensions}
 
 \end{document}
