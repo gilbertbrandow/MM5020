@@ -13,28 +13,28 @@ Refresh group definitions and key examples (cyclic, permutation, dihedral, matri
 - §1.1–1.7
 - §2.1–2.4
 - §3.1–3.3
-- §3.5 (Revisit odd and even in S_n)
+- §3.5 (REVISIT)*
 
 **Recommended exercises:**  
 
 - §1.1: 6, 9  
 - §1.2: 9, 10  
 - §1.3: 1, 11, 12  
-- §1.6: 3, 4, 6, 14 (REVISIT), 18  
+- §1.6: 3, 4, 6, 14 (REVISIT)*, 18  
 - §1.7: 1, 4, 10, 15  
 - §2.1: 1, 2, 6  
 - §2.2: 5, 10  
 - §2.3: 9, 11, 25  
 - §2.4: 6, 14, 16  
-- §3.1: 1, 6, 7, 24, 30, 43 (REVISIT)  
-- §3.2: 6, 8, 11 (REVISIT)
+- §3.1: 1, 6, 7, 24, 30, 43 (REVISIT)*
+- §3.2: 6, 8, 11 (REVISIT ||)
 
 **Past exam practice:**
 
-- **20241015** — 1(a), 1(b) (REVISIT) Bijection between left cosets and right cosets
-- **20240315** — 1a(REVISIT), 1b, 1c(REVISIT)
+- **20241015** — 1(a), 1(b) (REVISIT ||)
+- **20240813** — 1a(REVISIT ||), 1b(REVISIT ||), 1c(REVISIT ||)
 - **20230423** — 1a, 1b
-- **20240417** — 1a(REVISIT), 1b(REVISIT)
+- **20240417** — 1a(REVISIT ||), 1b(REVISIT)*
 
 ---
 
@@ -45,19 +45,20 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 **Reading:**
 
 - §4.1–4.4
-- §4.4 (REVISIT, Automorphisms)
+- §4.4
 
 **Recommended exercises:**
 
-- §4.1: 2(REVISIT), 4, 9, 10
+- §4.1: 2, 4, 9, 10
 - §4.2: 2
-- §4.3: 3, 6, 17, 19–21, 26, 27 (REVISIT), 30 (REVISIT)
+- §4.3: 3, 6, 17, 19–21, 26, 27 (REVISIT ||), 30 (REVISIT ||)
 
 **Past exam practice:**  
 
-- **20240417** —  2a, 2b, 2c, 3a, 3b(REVISIT)
+- **20240417** —  2a, 2b, 2c, 3a, 3b
 - **20250315** — 2(a), 2(b)
 - **20230423** — 2(a-d)
+- **20240813** — 2
 
 ---
 
@@ -157,6 +158,10 @@ Field extensions; algebraic elements; simple extensions.
 
 - Read of characteristics and automorphisms (DONE)
 - Read of basis of algebraic field extensions (DONE)
-- Create a cheat-sheet with all important definitions & theorems
+- Start on Cheat Sheet for important definitions and results (DONE)
 - Sunday September 28th do MM5020 250315 completely (DONE)
+- Understand irreducible polynomials (DONE)
+- Add Group Action results to main results
+- Add Gauss Lemma & Eisensteins criterion to Topic 5 results (DONE)
+- Document difference in UFD, PID, Integral Domains and Euclidean Domains
 - Work through homework assignments
