@@ -132,6 +132,16 @@ Hence, the conjugacy classes of $S_n$ correspond bijectively to partitions of $n
 
 \section{Sylows Theorem}
 \section{Rings}
+\subsection{Chinese Remainder Theorem}
+Let $R$ be a commutative ring with $1$ and let $A_1,\dots,A_k\unlhd R$ be ideals.
+If the $A_i$ are pairwise comaximal ($A_i+A_j=R$ for $i\neq j$), then the natural map
+\[
+\phi:R \longrightarrow \prod_{i=1}^k R/A_i,\qquad r\mapsto (r+A_i)_i
+\]
+is surjective with kernel $\bigcap_{i=1}^k A_i=\prod_{i=1}^k A_i$. Hence
+\[
+R\big/\!\big(\textstyle\prod_{i=1}^k A_i\big)\ \cong\ \prod_{i=1}^k R/A_i .
+\]
 
 \section{Integral -, Unique Factorization - \& Principle Ideal Domains}
 \subsection{Gauss's Lemma}
@@ -139,7 +149,7 @@ Let $R$ be a UFD with field of fractions $F$, and let $p(x)\in R[x]$.
 If $p$ is reducible in $F[x]$, then $p$ is reducible in $R[x]$.
 (Equivalently: if $p$ is irreducible in $R[x]$, then it is irreducible in $F[x]$.)
 
-\subsection{Eisenstein’s Criterion}
+\subsection{Eisenstein's Criterion}
 Let $R$ be an integral domain and $P\subset R$ a prime ideal. Consider
 \[
 f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0\in R[x].
