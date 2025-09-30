@@ -138,7 +138,7 @@ For $n\ge1$, the automorphism group of the cyclic group $C_n\cong \mathbb Z/n\ma
 hence $|\mathrm{Aut}(C_n)|=\varphi(n)$. Here $\varphi(n)$ is \emph{Euler's totient function}:
 \[
 \varphi(n)=\big|(\mathbb Z/n\mathbb Z)^\times\big|
-=\#\{\,1\le k\le n:\gcd(k,n)=1\,\}.
+= |\{\,1\le k\le n:\gcd(k,n)=1\,\}|.
 \]
 Equivalently, if $n=\prod p_i^{\,e_i}$ then
 \[
@@ -153,22 +153,18 @@ Write $\mathrm{Syl}_p(G)$ for the set of Sylow $p$-subgroups and $n_p:=|\mathrm{
 
 \subsection{Statements}
 \begin{itemize}[leftmargin=1.2em]
-  \item There exists $P\le G$ with $|P|=p^{a}$.
-  \item Any two Sylow $p$-subgroups are conjugate in $G$.
-  \item $n_p \equiv 1 \pmod p$ and $n_p \mid m$.
+  \item $\mathrm{Syl}_p(G) \neq \varnothing $.
+  \item Every $p$-subgroup of $G$ is contained in some conjugate of a Sylow $p$-subgroup. In particular, any two Sylow p-subgroups of $G$ are conjugate in $G$.
   \item $G$ acts on $\mathrm{Syl}_p(G)$ by $g\cdot P = gPg^{-1}$.  
-        For $P\in\mathrm{Syl}_p(G)$, the stabilizer is $N_G(P)$, hence
-        \[
-          n_p = [G : N_G(P)].
-        \]
-\end{itemize}
-
-\subsection{Consequences}
-\begin{itemize}[leftmargin=1.2em]
+  For $P\in\mathrm{Syl}_p(G)$, the stabilizer is $N_G(P)$, hence
+  \[
+    n_p = [G : N_G(P)].
+    \]
+  \item $n_p \equiv 1 \pmod p$ and $n_p \mid m$.
   \item If $n_p=1$, then the unique Sylow $p$-subgroup $P$ is normal \emph{and characteristic} in $G$
         (automorphisms permute Sylow $p$-subgroups; uniqueness forces $P$ to be fixed).
-  \item Every $p$-subgroup of $G$ is contained in some conjugate of a Sylow $p$-subgroup.
 \end{itemize}
+
 \section{Rings}
 \subsection{Chinese Remainder Theorem}
 Let $R$ be a commutative ring with $1$ and let $A_1,\dots,A_k\unlhd R$ be ideals.
@@ -199,5 +195,31 @@ Let $f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_0\in\mathbb{Z}[x]$.
 If there exists a prime $p$ such that $p\mid a_i$ for $i=0,\dots,n-1$ and $p^2\nmid a_0$, 
 then $f$ is irreducible in $\mathbb{Z}[x]$ (hence in $\mathbb{Q}[x]$ by Gauss).
 \section{Field Extensions}
+\subsection{Simple extensions and minimal polynomials}
+If $\alpha$ is algebraic over a field $F$, there is a unique monic irreducible
+$m_\alpha(x)\in F[x]$ with $m_\alpha(\alpha)=0$ (the \emph{minimal polynomial} of $\alpha$).
+
+\subsection{Construction via quotients}
+If $p(x)\in F[x]$ is irreducible and $K/F$ contains a root $\alpha$ of $p$, then
+\[
+F(\alpha)\ \cong\ F[x]/(p(x)).
+\]
+In particular, for any irreducible $p$, the quotient $F[x]/(p)$ is a field of degree $\deg p$,
+and the class $\bar x:=x+(p)$ is a root of $p$.
+
+\subsection{Degree and basis of a simple extension}
+Let $\alpha$ be algebraic over $F$ with $m_\alpha$ of degree $n$. Then
+\[
+[F(\alpha):F]=n,\qquad \{1,\alpha,\alpha^2,\dots,\alpha^{n-1}\}\ \text{is an $F$-basis of }F(\alpha).
+\]
+
+\subsection{Tower law}
+For fields $F\subseteq K\subseteq L$,
+\[
+[L:F]=[L:K]\,[K:F].
+\]
+
+\subsection{Finite $\Rightarrow$ algebraic}
+If $K/F$ is a finite extension, then every $\alpha\in K$ is algebraic over $F$ (hence $K/F$ is algebraic).
 
 \end{document}
