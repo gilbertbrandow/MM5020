@@ -76,7 +76,7 @@ Actions on sets; orbits/stabilizers; actions on \(G/H\) and by conjugation; clas
 
 **Past exam practice:**  
 
-- **20241015** — 2(a) (REVISIT), 2(b), 3(a), 3(b) (REVISIT)
+- **20241015** — 2a(REVISIT ||), 2b, 3a, 3b(REVISIT)*
 - **20240417** — 4a, 4b
 
 ---
@@ -99,9 +99,10 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 
 **Past exam practice:**  
 
-- **20230423** — 5a (REVISIT), 5b, 5c
-- **20240813** — 5 (REVISIT)
+- **230423** — 5a (REVISIT), 5b, 5c
 - **240417** — 5a, 5b (REVISIT), 5c (REVISIT)
+- **240813** — 5 (REVISIT)
+- **241015** — 4 (IMPORTANT, Polynomial Division)
 
 ---
 
@@ -128,7 +129,7 @@ Euclidean domains, PIDs, UFDs; irreducible polynomials; Gauss’s Lemma.
 **Past exam practice:**  
 
 - **240813** — 5 (REVISIT)
-- **241015** — 5 (REVISIT)
+- **241015** — 5 (REVISIT)*
 
 ---
 
@@ -148,9 +149,9 @@ Field extensions; algebraic elements; simple extensions.
 
 **Past exam practice:**  
 
-- **241015** — 6(REVISIT)
 - **240417** — 6a, 6b(REVISIT), 6c
-- **20240813** — 6 (REVISIT)
+- **240813** — 6 (REVISIT)
+- **241015** — 6(REVISIT)*
 
 ---
 
