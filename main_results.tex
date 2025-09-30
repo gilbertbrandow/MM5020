@@ -148,6 +148,27 @@ Equivalently, if $n=\prod p_i^{\,e_i}$ then
 
 
 \section{Sylows Theorem}
+Let $|G|=p^{a}m$ with $p\nmid m$ and $a\ge1$. A subgroup of order $p^{a}$ is a \emph{Sylow $p$-subgroup}.  
+Write $\mathrm{Syl}_p(G)$ for the set of Sylow $p$-subgroups and $n_p:=|\mathrm{Syl}_p(G)|$.
+
+\subsection{Statements}
+\begin{itemize}[leftmargin=1.2em]
+  \item There exists $P\le G$ with $|P|=p^{a}$.
+  \item Any two Sylow $p$-subgroups are conjugate in $G$.
+  \item $n_p \equiv 1 \pmod p$ and $n_p \mid m$.
+  \item $G$ acts on $\mathrm{Syl}_p(G)$ by $g\cdot P = gPg^{-1}$.  
+        For $P\in\mathrm{Syl}_p(G)$, the stabilizer is $N_G(P)$, hence
+        \[
+          n_p = [G : N_G(P)].
+        \]
+\end{itemize}
+
+\subsection{Consequences}
+\begin{itemize}[leftmargin=1.2em]
+  \item If $n_p=1$, then the unique Sylow $p$-subgroup $P$ is normal \emph{and characteristic} in $G$
+        (automorphisms permute Sylow $p$-subgroups; uniqueness forces $P$ to be fixed).
+  \item Every $p$-subgroup of $G$ is contained in some conjugate of a Sylow $p$-subgroup.
+\end{itemize}
 \section{Rings}
 \subsection{Chinese Remainder Theorem}
 Let $R$ be a commutative ring with $1$ and let $A_1,\dots,A_k\unlhd R$ be ideals.
