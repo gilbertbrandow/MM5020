@@ -99,9 +99,9 @@ Write down complete Defintion of a ring with axioms with definitions for commuta
 
 **Past exam practice:**  
 
-- **230423** — 5a (REVISIT), 5b, 5c
-- **240417** — 5a, 5b (REVISIT), 5c (REVISIT)
-- **240813** — 5 (REVISIT)
+- **230423** — 5a(REVISIT), 5b, 5c
+- **240417** — 5a, 5b(REVISIT), 5c(REVISIT)
+- **240813** — 5(REVISIT)*
 - **241015** — 4 (IMPORTANT, Polynomial Division)
 
 ---
@@ -144,12 +144,12 @@ Field extensions; algebraic elements; simple extensions.
 
 **Recommended exercises:**  
 
-- §13.1: All (Did not complete 2-8)
+- §13.1: 1, 2, 3, 4, 5, 6, 7, 8
 - §13.2: 2, 4, 8(REVISIT), 9(REVISIT), 16(REVISIT)
 
 **Past exam practice:**  
 
-- **240417** — 6a, 6b(REVISIT), 6c
+- **240417** — 6a, 6b(REVISIT)*, 6c
 - **240813** — 6 (REVISIT)
 - **241015** — 6(REVISIT)*
 
@@ -162,7 +162,7 @@ Field extensions; algebraic elements; simple extensions.
 - Start on Cheat Sheet for important definitions and results (DONE)
 - Sunday September 28th do MM5020 250315 completely (DONE)
 - Understand irreducible polynomials (DONE)
-- Add Group Action results to main results
+- Add Group Action results to main results (DONE)
 - Add Gauss Lemma & Eisensteins criterion to Topic 5 results (DONE)
-- Document difference in UFD, PID, Integral Domains and Euclidean Domains
+- Document difference in UFD, PID, Integral Domains and Euclidean Domains (DONE)
 - Work through homework assignments
