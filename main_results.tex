@@ -182,6 +182,40 @@ where $p(k)$ is the number of partitions of $k$.
 
 
 \section{Rings}
+
+\subsection{Ideals and basic ideal arithmetic}
+Throughout, $R$ is a commutative ring with $1$.
+
+\paragraph{Ideal.}
+An \emph{ideal} $I\unlhd R$ is an additive subgroup $I\le (R,+)$ with the absorption property:
+$rI\subseteq I$ for all $r\in R$ (equivalently $Ir\subseteq I$ in the commutative case).
+
+\paragraph{Principal ideal.}
+For $a\in R$, $(a):=Ra=\{ra:r\in R\}$.
+
+\paragraph{Zero and unit ideals.}
+$0:=\{0\}$ and $R$ are ideals. Every ideal contains $0$.  
+$1\in I$ \emph{iff} $I=R$ (the \emph{unit ideal}); otherwise $1\notin I$.
+
+\paragraph{Sum and intersection.}
+For ideals $I,J\unlhd R$,
+\[
+I+J:=\{\,i+j:\ i\in I,\ j\in J\,\},\qquad I\cap J\unlhd R.
+\]
+$\,I+J$ is the \emph{smallest} ideal containing $I\cup J$; $\,I\cap J$ is the \emph{largest} ideal contained in both.
+
+\paragraph{Product.}
+\[
+IJ:=\Big\{\ \sum_{k=1}^m i_k j_k:\ i_k\in I,\ j_k\in J,\ m\ge1\ \Big\}.
+\]
+Always $IJ\subseteq I\cap J$. If $I+J=R$ (i.e.\ $I,J$ are \emph{comaximal}), then $IJ=I\cap J$.
+
+\paragraph{Powers.}
+$I^n:=\underbrace{I\cdot I\cdots I}_{n\text{ times}}$; then $I^{n+1}\subseteq I^n$.
+
+\paragraph{Quotients.}
+$R/I$ is a ring; the projection $\pi:R\to R/I$ is surjective with $\ker\pi=I$.  
+Ideals $J$ with $I\subseteq J\unlhd R$ correspond to ideals of $R/I$ via $J\mapsto J/I$.
 \subsection{Chinese Remainder Theorem}
 Let $R$ be a commutative ring with $1$ and let $A_1,\dots,A_k\unlhd R$ be ideals.
 If the $A_i$ are pairwise comaximal ($A_i+A_j=R$ for $i\neq j$), then the natural map
