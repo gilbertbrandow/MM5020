@@ -194,6 +194,32 @@ R\big/\!\big(\textstyle\prod_{i=1}^k A_i\big)\ \cong\ \prod_{i=1}^k R/A_i .
 \]
 
 \section{Integral -, Unique Factorization - \& Principle Ideal Domains}
+\subsection{Definitions}
+\paragraph{Integral domain.}
+A (commutative, unital) ring $R$ with $1\neq 0$ and no zero divisors.
+
+\paragraph{Unique Factorization Domain (UFD).}
+An integral domain in which every nonzero nonunit factors as a finite product of
+irreducibles, and this factorization is unique up to order and associates.
+
+\paragraph{Principal Ideal Domain (PID).}
+An integral domain in which every ideal is principal, i.e.\ $\forall I\unlhd R$ there exists $a\in R$
+with $I=(a)$.
+
+\paragraph{Euclidean domain (ED).}
+An integral domain $R$ with a function $\delta:R\setminus\{0\}\to\mathbb N$ such that for all
+$a,b\in R$ with $b\neq 0$ there exist $q,r\in R$ with $a=bq+r$ and either $r=0$ or
+$\delta(r)<\delta(b)$ (a “division algorithm”).
+
+\paragraph{Fields are Euclidean.}
+For a field $F$, define $\delta(x)=0$ for $x\neq 0$. Then for any $a,b\in F$ with $b\neq 0$,
+$a=b(ab^{-1})+0$, so $F$ is Euclidean (hence a PID and a UFD).
+
+\paragraph{Implications}
+\[
+\text{Field} \;\Rightarrow\; \text{Euclidean domain} \;\Rightarrow\; \text{PID} \;\Rightarrow\; \text{UFD} \;\Rightarrow\; \text{integral domain}.
+\]
+
 \subsection{Gauss's Lemma}
 Let $R$ be a UFD with field of fractions $F$, and let $p(x)\in R[x]$. 
 If $p$ is reducible in $F[x]$, then $p$ is reducible in $R[x]$.
