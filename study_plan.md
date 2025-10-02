@@ -166,9 +166,9 @@ Field extensions; algebraic elements; simple extensions.
 - Add Gauss Lemma & Eisensteins criterion to Topic 5 results (DONE)
 - Document difference in UFD, PID, Integral Domains and Euclidean Domains (DONE)
 - Do 240308 completely (DONE)
-- Understand IJ and I intersect J
-- Work through different kinds of groups, their normal subgroups (mm5020-240308 1a)
-- Work with isomorphism of group (mm5020-240308 2c)
-- Work with unique Sylow p-subgroups (mm5020-240308 4a)
-- Work with multivariable extensions (mm5020-240308 6c)
+- Understand IJ and I intersect J (DONE)
+- Work through different kinds of groups, their normal subgroups (mm5020-240308 1a) (DONE)
+- Work with isomorphism of group (mm5020-240308 2c) (DONE)
+- Work with unique Sylow p-subgroups (mm5020-240308 4a) (DONE)
+- Work with multivariable extensions (mm5020-240308 6c) (DONE)
 - Work through homework assignments
