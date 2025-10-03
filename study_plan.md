@@ -169,8 +169,8 @@ Field extensions; algebraic elements; simple extensions.
 - Understand IJ and I intersect J (DONE)
 - Work through different kinds of groups, their normal subgroups (mm5020-240308 1a) (DONE)
 - Work with isomorphism of group (mm5020-240308 2c) (DONE)
-- Work with unique Sylow p-subgroups (mm5020-240308 4a) (DONE) (REDO)
+- Work with unique Sylow p-subgroups (mm5020-240308 4a) (DONE)
 - Work with multivariable extensions (mm5020-240308 6c) (DONE)
-- Work with more Eisenstein criterion, how do we apply p, p^2 criterion
+- Work with more Eisenstein criterion, how do we apply p, p^2 criterion (DONE)
 - Work through 5,6 question from another previous exam
 - Work through homework assignments

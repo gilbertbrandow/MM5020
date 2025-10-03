@@ -277,11 +277,18 @@ If $a_{n-1},\dots,a_0\in P$ and $a_0\notin P^2$, then $f(x)$ is irreducible in $
 Let $f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_0\in\mathbb{Z}[x]$. 
 If there exists a prime $p$ such that $p\mid a_i$ for $i=0,\dots,n-1$ and $p^2\nmid a_0$, 
 then $f$ is irreducible in $\mathbb{Z}[x]$ (hence in $\mathbb{Q}[x]$ by Gauss).
+\subsection{Rational Root Test}
+Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0\in\mathbb{Z}[x]$ with $a_n\ne0$.
+If $\frac{p}{q}\in\mathbb{Q}$ (in lowest terms, i.e.\ $\gcd(p,q)=1$) is a root of $f$, then
+\[
+p\mid a_0\qquad\text{and}\qquad q\mid a_n.
+\]
+In particular, if $f$ is \emph{monic} ($a_n=1$), every rational root must be an \emph{integer} divisor of $a_0$.
+
 \section{Field Extensions}
 \subsection{Simple extensions and minimal polynomials}
 If $\alpha$ is algebraic over a field $F$, there is a unique monic irreducible
 $m_\alpha(x)\in F[x]$ with $m_\alpha(\alpha)=0$ (the \emph{minimal polynomial} of $\alpha$).
-
 \subsection{Construction via quotients}
 If $p(x)\in F[x]$ is irreducible and $K/F$ contains a root $\alpha$ of $p$, then
 \[
