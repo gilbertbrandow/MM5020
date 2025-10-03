@@ -172,6 +172,7 @@ Field extensions; algebraic elements; simple extensions.
 - Work with unique Sylow p-subgroups (mm5020-240308 4a) (DONE)
 - Work with multivariable extensions (mm5020-240308 6c) (DONE)
 - Work with more Eisenstein criterion, how do we apply p, p^2 criterion (DONE)
-- Work through 5,6 question from another previous exam
-- Understand how & when polynomial extensions are fields, EDs, PIDs and so forth
+- Work through 5,6 question from another previous exam (DONE)
+- Understand how & when polynomial extensions are fields, EDs, PIDs and so forth (DONE)
+- Repeat new method for determining if group simple, do 2 more Sylow exercises from old exams
 - Work through homework assignments
