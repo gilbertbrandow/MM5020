@@ -174,5 +174,6 @@ Field extensions; algebraic elements; simple extensions.
 - Work with more Eisenstein criterion, how do we apply p, p^2 criterion (DONE)
 - Work through 5,6 question from another previous exam (DONE)
 - Understand how & when polynomial extensions are fields, EDs, PIDs and so forth (DONE)
-- Repeat new method for determining if group simple, do 2 more Sylow exercises from old exams
+- Repeat new method for determining if group simple, do 2 more Sylow exercises from old exams (DONE)
 - Work through homework assignments
+- Do 221012 completely
