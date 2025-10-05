@@ -130,6 +130,18 @@ Two permutations in $S_n$ are conjugate if and only if they have the same cycle 
 \]
 Hence, the conjugacy classes of $S_n$ correspond bijectively to partitions of $n$.
 
+\subsection{Centralizer size in $S_n$}
+If $\sigma\in S_n$ has, for each length $\ell\ge1$, exactly $m_\ell$ disjoint cycles of length $\ell$
+(so $\sum_{\ell\ge1}\ell\,m_\ell=n$), then
+\[
+|C_{S_n}(\sigma)|=\prod_{\ell\ge1}\ell^{\,m_\ell}\,m_\ell!\,.
+\]
+Here $\ell$ is a cycle length and $m_\ell$ is the number of $\ell$-cycles in $\sigma$.
+Consequently, the conjugacy class size is
+\[
+|\mathrm{Cl}(\sigma)|=\frac{n!}{|C_{S_n}(\sigma)|}.
+\]
+
 \subsection{Automorphisms of cyclic groups}
 For $n\ge1$, the automorphism group of the cyclic group $C_n\cong \mathbb Z/n\mathbb Z$ is
 \[
