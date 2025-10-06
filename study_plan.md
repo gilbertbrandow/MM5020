@@ -176,4 +176,4 @@ Field extensions; algebraic elements; simple extensions.
 - Understand how & when polynomial extensions are fields, EDs, PIDs and so forth (DONE)
 - Repeat new method for determining if group simple, do 2 more Sylow exercises from old exams (DONE)
 - Work through homework assignments
-- Do 221012 completely
+- Do 221012 completely (DONE)
