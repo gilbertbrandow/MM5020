@@ -192,6 +192,16 @@ If $|G|= \prod p_i^{a_i}$ then the number of abelian groups of order $|G|$ (up t
 \]
 where $p(k)$ is the number of partitions of $k$.
 
+\paragraph{Counting abelian groups}
+To find the number of abelian groups of a given finite order:
+\begin{enumerate}[leftmargin=1.5em]
+  \item Factor the order: $|G|=\prod p_i^{\,a_i}$.
+  \item For each prime $p_i$, list all partitions of $a_i$.
+  \item Multiply their counts: $\text{number of groups}=\prod_i p(a_i)$.
+\end{enumerate}
+\emph{Example:} $|G|=60=2^2\cdot3\cdot5$ gives $p(2)p(1)p(1)=2$ abelian groups:
+$\mathbb Z_{60}$ and $\mathbb Z_{30}\times\mathbb Z_2$.
+
 \subsection{Groups of order $p^2$}
 Let $|G|=p^2$ with $p$ prime. Then $G$ is abelian, and
 \[
